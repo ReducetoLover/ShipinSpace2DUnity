@@ -339,6 +339,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2632,6 +2633,112 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shipsheetparts1_86: 8535251407062563706
+      shipsheetparts1_93: 7604465344946249509
+      shipsheetparts1_50: -5194345811390885039
+      shipsheetparts1_99: 3089032091720211777
+      shipsheetparts1_26: 2144256560618503120
+      shipsheetparts1_19: 627659717029570277
+      shipsheetparts1_76: 7050338711340709363
+      shipsheetparts1_102: 8951105397770533541
+      shipsheetparts1_103: -6638618518866546825
+      shipsheetparts1_10: -513055345440797122
+      shipsheetparts1_68: -3412380718196857756
+      shipsheetparts1_94: 878360982092369850
+      shipsheetparts1_66: 6307761124966480172
+      shipsheetparts1_87: -7040305351719089214
+      shipsheetparts1_25: 1695311972554082178
+      shipsheetparts1_54: -4388265269658405083
+      shipsheetparts1_75: -3281027817605927100
+      shipsheetparts1_29: -4985546923840704250
+      shipsheetparts1_11: 1319911416556920864
+      shipsheetparts1_14: 3636368176036351139
+      shipsheetparts1_84: 7749778302889697525
+      shipsheetparts1_0: -594428114038706379
+      shipsheetparts1_46: -243015173010025004
+      shipsheetparts1_34: -1079179961017336193
+      shipsheetparts1_104: 3450898698501293167
+      shipsheetparts1_64: 7165203857744986922
+      shipsheetparts1_96: 1350579450462218244
+      shipsheetparts1_98: 8393102500397222969
+      shipsheetparts1_24: 3311591402687617449
+      shipsheetparts1_21: -1301135204933567476
+      shipsheetparts1_20: -4357900746154760543
+      shipsheetparts1_39: -3677928537852379720
+      shipsheetparts1_67: -1257466760715855946
+      shipsheetparts1_2: 7109652984187480007
+      shipsheetparts1_51: -926010187913787508
+      shipsheetparts1_15: -8145180189636718561
+      shipsheetparts1_44: -6241481501802661547
+      shipsheetparts1_56: -6309866943567921281
+      shipsheetparts1_12: -7242809095633306763
+      shipsheetparts1_16: 1417710073472133151
+      shipsheetparts1_31: 5644341740300494447
+      shipsheetparts1_83: -6858049580577902103
+      shipsheetparts1_13: 7120464298911549644
+      shipsheetparts1_70: 8805383767632787795
+      shipsheetparts1_65: -8781718809956389384
+      shipsheetparts1_57: -7873613347091976100
+      shipsheetparts1_48: -8312345993981061179
+      shipsheetparts1_17: -6164121492154173159
+      shipsheetparts1_1: -7371139224289363211
+      shipsheetparts1_37: -4323186623566018014
+      shipsheetparts1_55: 853721924301422265
+      shipsheetparts1_100: -3495593771785859289
+      shipsheetparts1_30: 4081398491452726954
+      shipsheetparts1_58: -7322268759256237634
+      shipsheetparts1_52: 531384069333036319
+      shipsheetparts1_62: 6733716872726886433
+      shipsheetparts1_22: 6542040630330753734
+      shipsheetparts1_43: -8274083797743769250
+      shipsheetparts1_63: -4734744332135777412
+      shipsheetparts1_45: -2192144048251561012
+      shipsheetparts1_6: 6894906156977431102
+      shipsheetparts1_49: -4347219974873620070
+      shipsheetparts1_7: -165026558092591556
+      shipsheetparts1_79: -8141560321797326357
+      shipsheetparts1_95: 125955102279748223
+      shipsheetparts1_5: 4407719717297326958
+      shipsheetparts1_35: -2683341778509208812
+      shipsheetparts1_23: -6660255276621173230
+      shipsheetparts1_59: 3436517747793396735
+      shipsheetparts1_88: -6450542594707833808
+      shipsheetparts1_91: -3509274947593220855
+      shipsheetparts1_81: -4926097034611846427
+      shipsheetparts1_40: 8818910648409707045
+      shipsheetparts1_78: 8901733363449162663
+      shipsheetparts1_69: 2044884162486411727
+      shipsheetparts1_42: 1629278384988292824
+      shipsheetparts1_61: 1793792330976569063
+      shipsheetparts1_60: 7754297637840390476
+      shipsheetparts1_36: -3506442161392482121
+      shipsheetparts1_53: -3052824620949764564
+      shipsheetparts1_27: -4389421844712143307
+      shipsheetparts1_89: 7596422098530362388
+      shipsheetparts1_80: 6298539902914326117
+      shipsheetparts1_77: -4597011818515256563
+      shipsheetparts1_73: 1243117616431224268
+      shipsheetparts1_82: 7750048684931896194
+      shipsheetparts1_97: 2132588812882853881
+      shipsheetparts1_28: 8385245231774068264
+      shipsheetparts1_41: -8096947116515594763
+      shipsheetparts1_101: -7996939609300816604
+      shipsheetparts1_3: -949406948329935794
+      shipsheetparts1_74: 8044792041143917528
+      shipsheetparts1_85: 8152003085341368036
+      shipsheetparts1_4: -1040157250287795437
+      shipsheetparts1_9: -5160636951227483545
+      shipsheetparts1_71: -1520514750955691203
+      shipsheetparts1_18: -2733379629720790762
+      shipsheetparts1_32: -8909704318614340817
+      shipsheetparts1_72: -7463379517964088616
+      shipsheetparts1_47: -4184566748701183196
+      shipsheetparts1_8: -5795499544351987889
+      shipsheetparts1_33: 6642796909671984556
+      shipsheetparts1_38: 3793924576384320569
+      shipsheetparts1_92: 517702997347336666
+      shipsheetparts1_90: 7718731730220340799
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -16,7 +16,7 @@ namespace Reducer
     }
     public void play(Vector3 a)
     {
-      print("взрыв");
+      print($"взрыв+{FromScript.instance.NameScript()}");
       vfx.transform.position = a;
       Instantiate(vfx);
       vfx.Play();

@@ -17,7 +17,7 @@ namespace Reducer
     }
     public void Enable(bool value)
     {
-      print(23);
+      print($"23+{FromScript.instance.NameScript()}");
       Time.timeScale = value ? 0 : 1;
     }
     private void OnApplicationPause(bool pause)

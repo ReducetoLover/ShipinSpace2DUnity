@@ -1,10 +1,17 @@
 using System.Collections;
 using UnityEngine;
+using Unity;
+using System.Threading;
+
 
 namespace Reducer
 {
   public class RespawnBot : MonoBehaviour
   {
+    public string GetCurrentFileName([System.Runtime.CompilerServices.CallerFilePath] string fileName = null)
+    {
+      return "\nfrom " + fileName[65..^2];
+    }
     public static RespawnBot instance;
     [SerializeField]
     public GameObject bot;
@@ -31,9 +38,10 @@ namespace Reducer
     {
       yield return new WaitForSeconds(Random.Range(Secondsmin, Secondsmax));
       float x = Random.Range(-5f, 5f);
-      print($"{x}+бот");
+     
       Destroy(Instantiate(bot.gameObject, new Vector3(x, 14, 9), Quaternion.identity), 15f);
       StartCoroutine(TimeBot());
+      print($"{x}+бот,+{FromScript.instance.NameScript()}");
     }
 
 

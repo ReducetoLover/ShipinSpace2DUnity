@@ -1,3 +1,4 @@
+using Reducer;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class CameraSize : MonoBehaviour
   private const float HalfSize = 200.0f;
   private void Awake()
   {
-    print(2);
+    print($"2+{FromScript.instance.NameScript()}");
     CameraResize();
   }
   private void CameraResize()
@@ -18,7 +19,7 @@ public class CameraSize : MonoBehaviour
     float targetRatio = TargetSizeX / TargetSizeY;
     if (screenRatio >= targetRatio)
     {
-      print(2);
+      print($"2+{FromScript.instance.NameScript()}");
       Resize();
     }
     else

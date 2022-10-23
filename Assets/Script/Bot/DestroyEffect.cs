@@ -14,7 +14,7 @@ namespace Reducer
     }
     public void Die()
     {
-      print("animate");
+      print($"animate+{FromScript.instance.NameScript()}");
       //GetComponent<Animation>().Play("bot");
       destroybot.Play("bot");
     }

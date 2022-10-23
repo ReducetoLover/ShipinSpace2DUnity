@@ -22,12 +22,12 @@ namespace Reducer
       //kill = PlayerPrefs.GetInt("kill");
       dietxt.text = ($"{PlayerPrefs.GetInt("Diescore")} died");
       killtxt.text = ($"{PlayerPrefs.GetInt("kill")} destroyed");
-      print($"{kill} {killtxt.text}");
+      print($"{kill}+ {killtxt.text}");
     }
 
     public void Scorekillbot()
     {
-      print("засчитало");
+      print($"засчитало+{FromScript.instance.NameScript()}");
       kill += 1;
       PlayerPrefs.SetInt("kill",kill);
     }

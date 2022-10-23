@@ -74,7 +74,7 @@ namespace Reducer
         {
           _timeLeft = time;
           _timerOn = false;
-          print(time);
+          print($"{time} +{ FromScript.instance.NameScript()}");
         }
 
 
@@ -120,12 +120,12 @@ namespace Reducer
           else
           {
             SaveLevel = SceneManager.GetActiveScene().buildIndex+1;
-            print($"{SaveLevel} + {PlayerPrefs.GetInt("levels")}");
+            print($"{SaveLevel} + {PlayerPrefs.GetInt("levels")}+{FromScript.instance.NameScript()}");
             if (SaveLevel>PlayerPrefs.GetInt("levels"))
             {
               PlayerPrefs.SetInt("levels", SaveLevel);
             }
-            print($"{PlayerPrefs.GetInt("levels")} ага");
+            print($"{PlayerPrefs.GetInt("levels")} ага+{FromScript.instance.NameScript()}");
             _killtime = false;
             panelwin.SetActive(true);
             pause.Enable(true);

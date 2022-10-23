@@ -17,7 +17,7 @@ namespace Reducer
     void Start()
     {
       Unlocklevel = PlayerPrefs.GetInt("levels");
-      print(Unlocklevel);
+      print($"{ Unlocklevel}");
       switch (Unlocklevel)
       {
         case 2:

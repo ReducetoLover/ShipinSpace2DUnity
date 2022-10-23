@@ -48,7 +48,7 @@ namespace Reducer
          Textkillinmap.instance.Scorekillbot();
           if (GameObject.Find("Achivekills") == true)
           {
-            print("bot");
+            print($"bot+{FromScript.instance.NameScript()}");
             if (AchiveControl.instance.nowkill < AchiveControl.instance.wantkill)
             {
               AchiveControl.instance.nowkill += 1;
