@@ -14,7 +14,11 @@ namespace Reducer
     {
       instance = this;
     }
-    public void play(Vector3 a)
+    public void Hit()
+    {
+       hit.Play();
+    }
+    public void PlayAnimateDetonationBot(Vector3 a)
     {
       print($"взрыв+{FromScript.instance.NameScript()}");
       vfx.transform.position = a;

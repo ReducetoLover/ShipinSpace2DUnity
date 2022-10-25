@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
 
 namespace Reducer
 {
@@ -31,9 +30,9 @@ namespace Reducer
       _killtime = true;
       instance = this;
       //Timeimage.transform.position = new Vector3(-5.7f, 12f, 9);
-     // timerText.transform.position = new Vector3(-4.5f, 12.1f, 9);
-     // Textkills.transform.position = new Vector3(-4.5f, 10f, 9);
-     // Killimage.transform.position = new Vector3(-6f, 10f, 9);
+      // timerText.transform.position = new Vector3(-4.5f, 12.1f, 9);
+      // Textkills.transform.position = new Vector3(-4.5f, 10f, 9);
+      // Killimage.transform.position = new Vector3(-6f, 10f, 9);
       if (GameObject.Find("Achivekills") == false)
       {
         _killOn = false;
@@ -74,7 +73,7 @@ namespace Reducer
         {
           _timeLeft = time;
           _timerOn = false;
-          print($"{time} +{ FromScript.instance.NameScript()}");
+          print($"{time} +{FromScript.instance.NameScript()}");
         }
 
 
@@ -119,9 +118,9 @@ namespace Reducer
           }
           else
           {
-            SaveLevel = SceneManager.GetActiveScene().buildIndex+1;
+            SaveLevel = SceneManager.GetActiveScene().buildIndex + 1;
             print($"{SaveLevel} + {PlayerPrefs.GetInt("levels")}+{FromScript.instance.NameScript()}");
-            if (SaveLevel>PlayerPrefs.GetInt("levels"))
+            if (SaveLevel > PlayerPrefs.GetInt("levels"))
             {
               PlayerPrefs.SetInt("levels", SaveLevel);
             }

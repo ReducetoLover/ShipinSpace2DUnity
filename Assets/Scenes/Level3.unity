@@ -850,6 +850,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0261979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.013940096
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.15
+      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799077, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -880,11 +896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -958,6 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -990,6 +1007,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

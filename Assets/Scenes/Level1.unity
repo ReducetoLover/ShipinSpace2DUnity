@@ -133,6 +133,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9016728806002106434, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_PrefabInstance: {fileID: 6545936251099683784}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &376840183 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7719452499456749732, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+  m_PrefabInstance: {fileID: 7719452499785667494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2993430264828028973, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
@@ -860,17 +865,25 @@ PrefabInstance:
       propertyPath: paneldietext
       value: 
       objectReference: {fileID: 1889393518}
+    - target: {fileID: 4305348381865799081, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799081, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799082, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 41eaf8a365034524d8eac8bd5fc51c14, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.9999998
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799083, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_LocalScale.y
@@ -959,6 +972,14 @@ PrefabInstance:
       propertyPath: ship
       value: 
       objectReference: {fileID: 1932246991}
+    - target: {fileID: 259699990973771557, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: border
+      value: 
+      objectReference: {fileID: 376840183}
+    - target: {fileID: 259699990973771557, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5282416951196038252, guid: 57246b19736f9474a95071a99c5e107d, type: 3}
     - target: {fileID: 259699991126897385, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 215
@@ -1030,6 +1051,30 @@ PrefabInstance:
     - target: {fileID: 735699896330782477, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 86.475105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464388, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464394, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: deadZone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464394, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464394, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: axisOptions
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464394, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: handleRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044345201873464394, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: moveThreshold
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4057309763682199765, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Color.a
@@ -1155,7 +1200,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 914879692}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8057584010253428609, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
 --- !u!1 &7462870288397872948 stripped
 GameObject:

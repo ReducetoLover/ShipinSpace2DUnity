@@ -9,6 +9,7 @@ namespace Reducer
     private GameObject ship;
     [SerializeField]
     private Transform gun;
+    
 
     private void Start()
     {
@@ -16,7 +17,7 @@ namespace Reducer
     }
     public void Shot()
     {
-      Destroy(Instantiate(bullet.gameObject, gun.position, gun.rotation), 1.5f);
+      Instantiate(bullet.gameObject, gun.position, gun.rotation);
     }
 
   }

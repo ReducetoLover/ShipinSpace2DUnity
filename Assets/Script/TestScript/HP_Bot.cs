@@ -28,7 +28,7 @@ namespace Reducer
     {
       if (collision.tag == "bullet")
       {
-        AnimateDetanationandmusic.instance.hit.Play();
+        AnimateDetanationandmusic.instance.Hit();
         hpBar.width -= hpBar.width / health;
         health -= bulletSpeed.damage;
         hpBar.sprite.size = new Vector2(hpBar.width, 0.56f);
@@ -41,12 +41,11 @@ namespace Reducer
             if (AchiveControl.instance.nowkill < AchiveControl.instance.wantkill)
             {
               AchiveControl.instance.nowkill += 1;
-
             }
           }
           if (animated == 0)
           {
-            AnimateDetanationandmusic.instance.play(a = bot.transform.position);
+            AnimateDetanationandmusic.instance.PlayAnimateDetonationBot(a = bot.transform.position);
             animated = 1;
             Destroy(bot);
           }

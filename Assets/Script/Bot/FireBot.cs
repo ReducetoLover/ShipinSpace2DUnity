@@ -28,12 +28,14 @@ namespace Reducer
     IEnumerator BotFire()
     {
       yield return new WaitForSeconds(Random.Range(RespawnBot.instance.Minfirebot, RespawnBot.instance.Maxfirebot));
-      Destroy(Instantiate(bullet.gameObject, gun.position, gun.rotation), 1.5f);
+      FireBullet();
       botFiresound.Play();
       StartCoroutine(BotFire());
-
     }
-
-
+   
+    public void FireBullet()
+    {
+      Instantiate(bullet.gameObject, gun.position, gun.rotation);
+    }
   }
 }

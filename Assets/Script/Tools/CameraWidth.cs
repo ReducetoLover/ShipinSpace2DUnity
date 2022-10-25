@@ -6,7 +6,7 @@ public class CameraWidth : MonoBehaviour
   private const float HalfSizeInPixels = 200f;
   private void Awake()
   {
-    Application.targetFrameRate = 120;
+    Application.targetFrameRate = 144;
     GetComponent<Camera>().orthographicSize = Width * Screen.height / Screen.width / HalfSizeInPixels;
   }
 }
