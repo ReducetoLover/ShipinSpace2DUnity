@@ -38,8 +38,7 @@ namespace Reducer
     {
       yield return new WaitForSeconds(Random.Range(Secondsmin, Secondsmax));
       float x = Random.Range(-5f, 5f);
-     
-      Destroy(Instantiate(bot.gameObject, new Vector3(x, 14, 9), Quaternion.identity), 15f);
+      Destroy(Instantiate(bot.gameObject, new Vector3(x, 14, 0), Quaternion.identity), 15f);
       StartCoroutine(TimeBot());
       print($"{x}+бот,+{FromScript.instance.NameScript()}");
     }

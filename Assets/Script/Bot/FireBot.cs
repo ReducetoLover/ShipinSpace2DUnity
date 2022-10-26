@@ -5,6 +5,7 @@ namespace Reducer
 {
   public class FireBot : MonoBehaviour
   {
+    public static FireBot instance;
     public AudioSource botFiresound;
     [SerializeField]
     private GameObject bullet;
@@ -23,7 +24,7 @@ namespace Reducer
     // Update is called once per frame
     void Update()
     {
-
+      instance = this;
     }
     IEnumerator BotFire()
     {

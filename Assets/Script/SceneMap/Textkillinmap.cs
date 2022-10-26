@@ -29,7 +29,7 @@ namespace Reducer
     {
       print($"засчитало+{FromScript.instance.NameScript()}");
       kill += 1;
-      PlayerPrefs.SetInt("kill",kill);
+      PlayerPrefs.SetInt("kill", kill);
     }
     // Update is called once per frame
     void Update()
