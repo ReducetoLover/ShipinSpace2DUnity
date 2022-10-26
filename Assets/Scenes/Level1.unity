@@ -933,6 +933,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7065564784457259829, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: border
+      value: 
+      objectReference: {fileID: 376840183}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
 --- !u!1 &6434928714778558153 stripped
@@ -968,6 +972,10 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 849340694}
+    - target: {fileID: 259699990973771557, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 1797129705}
     - target: {fileID: 259699990973771557, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: ship
       value: 

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2614785869982423284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900411454509755104}
+  m_Layer: 0
+  m_Name: Case
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900411454509755104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614785869982423284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.007, y: -0.711, z: 0}
+  m_LocalScale: {x: 0.5625, y: 0.33781248, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4305348381865799083}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4305348381865799077
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +45,7 @@ GameObject:
   - component: {fileID: 4305348381865799081}
   - component: {fileID: 4305348381865799080}
   - component: {fileID: 4305348381865799087}
-  - component: {fileID: 1932246992}
+  - component: {fileID: 6932243577215763593}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -35,6 +66,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 849340694}
+  - {fileID: 900411454509755104}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -102,8 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e089c3cf38cae2d46bf197ccd7d67a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4305348381865799083}
-  distanceRay: 5
+  player: {fileID: 900411454509755104}
+  border: {fileID: 0}
+  test: 1
 --- !u!50 &4305348381865799081
 Rigidbody2D:
   serializedVersion: 4
@@ -153,8 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c7bc2d632afdd489603504c8d78738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1932246992
-BoxCollider2D:
+--- !u!60 &6932243577215763593
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -166,7 +199,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.02138865}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -176,9 +209,40 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 1.1729486}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.19842622, y: -0.19762462}
+      - {x: 0.16579507, y: -0.13925026}
+      - {x: 0.30397862, y: 0.08884252}
+      - {x: 0.50631964, y: 0.35400105}
+      - {x: 0.4984262, y: 0.36599898}
+      - {x: 0.19580327, y: 0.44762462}
+      - {x: 0.32520762, y: 0.63326037}
+      - {x: 0.08591148, y: 0.5167158}
+      - {x: 0.07745954, y: 0.5242821}
+      - {x: 0.02, y: 0.644282}
+      - {x: -0.02, y: 0.66999996}
+      - {x: -0.07536947, y: 0.5095864}
+      - {x: -0.31327936, y: 0.6379561}
+      - {x: -0.3216397, y: 0.6416301}
+      - {x: -0.32999998, y: 0.65999997}
+      - {x: -0.3249191, y: 0.6326524}
+      - {x: -0.31073895, y: 0.5973475}
+      - {x: -0.19610842, y: 0.4416302}
+      - {x: -0.45100006, y: 0.38916782}
+      - {x: -0.50790983, y: 0.36693394}
+      - {x: -0.5128126, y: 0.37692386}
+      - {x: -0.5036885, y: 0.35537484}
+      - {x: -0.3911893, y: 0.19673955}
+      - {x: -0.16819845, y: -0.117956154}
+      - {x: -0.19610842, y: -0.2106083}
+      - {x: -0.14492747, y: -0.3659084}
+      - {x: -0.08491909, y: -0.56693447}
+      - {x: -0.043729767, y: -0.6726519}
+      - {x: -0.02, y: -0.66999996}
+      - {x: 0.04, y: -0.68}
+      - {x: 0.04790992, y: -0.6616302}
+      - {x: 0.08210655, y: -0.6176246}
 --- !u!1001 &8769560437437604647
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -21,13 +21,12 @@ namespace Reducer
     }
     public void Shot()
     {
-      Instantiate(bullet.gameObject, gun.position, gun.rotation);
-      StartCoroutine(FireBullet());
-    }
-    public void ShorAutomata()
-    {
-      Shot();
       Fire.Play();
+      Instantiate(bullet.gameObject, gun.position, gun.rotation);
+      
+    }
+    public void ShotAutomata()
+    {
       StartCoroutine(FireBullet());
       print("запуск");
     }
@@ -40,7 +39,7 @@ namespace Reducer
       print("корутина");
       yield return new WaitForSeconds(0.3f);
       Shot();
-      Fire.Play();
+      StartCoroutine(FireBullet());
 
     }
 

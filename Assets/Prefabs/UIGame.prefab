@@ -375,6 +375,7 @@ MonoBehaviour:
   bullet: {fileID: 5282416951196038252, guid: 57246b19736f9474a95071a99c5e107d, type: 3}
   ship: {fileID: 0}
   gun: {fileID: 0}
+  Fire: {fileID: 97746805214000588}
 --- !u!82 &97746805214000588
 AudioSource:
   m_ObjectHideFlags: 0
