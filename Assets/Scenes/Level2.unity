@@ -457,6 +457,14 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1120496733}
+    - target: {fileID: 7719452499456749733, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719452499456749735, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7719452499505300607, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: _camera
       value: 
@@ -464,6 +472,10 @@ PrefabInstance:
     - target: {fileID: 7719452499971574964, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_Name
       value: PlayZoneBorder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719452499971574964, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7719452499971574965, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_RootOrder
@@ -1158,6 +1170,10 @@ PrefabInstance:
     - target: {fileID: 7065564784457259829, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: distanceRay
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065564784457259829, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: mask.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3880133803591879182}
   - component: {fileID: 9190131559130183152}
   - component: {fileID: 4420167731814343118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BulletGreen
   m_TagString: bulletbot
   m_Icon: {fileID: 0}
