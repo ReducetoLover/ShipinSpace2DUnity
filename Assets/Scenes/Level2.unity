@@ -457,14 +457,6 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1120496733}
-    - target: {fileID: 7719452499456749733, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7719452499456749733, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7719452499505300607, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: _camera
       value: 
@@ -1099,10 +1091,6 @@ PrefabInstance:
       propertyPath: paneldietext
       value: 
       objectReference: {fileID: 2070842385}
-    - target: {fileID: 4305348381865799081, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799082, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Sprite
       value: 

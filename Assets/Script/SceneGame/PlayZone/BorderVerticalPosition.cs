@@ -18,7 +18,7 @@ namespace Reducer
       float positionY = _camera.ScreenToWorldPoint(safeAreaPotion).y;
       if (safeAreaPotion == Screen.safeArea.min)
       {
-        transform.position = new Vector2(transform.position.x, positionY - 0.5f);
+        transform.position = new Vector2(transform.position.x, positionY - 1.2f);
       }
       else if (safeAreaPotion == Screen.safeArea.max)
       {

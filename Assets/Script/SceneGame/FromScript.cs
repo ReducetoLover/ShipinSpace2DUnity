@@ -14,7 +14,7 @@ namespace Reducer
     public object NameScript([System.Runtime.CompilerServices.CallerFilePath] string fileName = null)
     {
       
-      return "\nfrom " + fileName[65..^2];
+      return "\nfrom " + fileName[48..^2];
     }
     
     // Update is called once per frame
