@@ -133,6 +133,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9016728806002106434, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_PrefabInstance: {fileID: 6545936251099683784}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &134904680 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6545936251162263960, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+  m_PrefabInstance: {fileID: 6545936251099683784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &376840183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7719452499456749732, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
@@ -620,6 +625,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2128947383933688730, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2128947383933688735, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_Name
       value: Manager
@@ -836,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2993430264828029138, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -44.7
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2993430264828029138, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: m_LocalRotation.w
@@ -876,14 +885,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 900411454509755104, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 900411454509755104, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.66
-      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799077, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -976,6 +977,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7065564784457259829, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 134904680}
     - target: {fileID: 7065564784457259829, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: border
       value: 
@@ -1185,7 +1190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545936251162263943, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_PlaneDistance
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6545936251162263960, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Pivot.x
