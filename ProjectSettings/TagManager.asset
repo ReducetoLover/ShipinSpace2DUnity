@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - bulletbot
   - ZoneBorder
+  - ButtonFire
   layers:
   - Default
   - TransparentFX

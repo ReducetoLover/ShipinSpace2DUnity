@@ -13,11 +13,14 @@ namespace Reducer
     [SerializeField]
     private Transform gun;
     public AudioSource Fire;
-    
+    private void Awake()
+    {
+      instance = this;
+    }
 
     private void Start()
     {
-      instance = this;
+     
     }
     public void Shot()
     {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7719452499378160188}
   - component: {fileID: 7719452499378160189}
   - component: {fileID: 7719452499378160186}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Right
   m_TagString: ZoneBorder
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 7719452499383216762}
   - component: {fileID: 7719452499383216763}
   - component: {fileID: 7719452499383216760}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Left
   m_TagString: ZoneBorder
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 7719452499456749732}
   - component: {fileID: 7719452499456749733}
   - component: {fileID: 7719452499456749730}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Up
   m_TagString: ZoneBorder
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 7719452499505300593}
   - component: {fileID: 7719452499505300606}
   - component: {fileID: 7719452499505300607}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Down
   m_TagString: ZoneBorder
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7719452499971574965}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PlayZoneBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

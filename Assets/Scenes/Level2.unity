@@ -185,6 +185,11 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6573409242839215201, guid: 5f08002a23812f343a3b069c4d8941b4, type: 3}
   m_PrefabInstance: {fileID: 13201506}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &36895899 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7233563251119131471, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+  m_PrefabInstance: {fileID: 2066358698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &218992278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,9 +210,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a6dc82786a78ec34c80b4cbcddbd754a, type: 3}
     - target: {fileID: 259699990973771556, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2036446438}
+    - target: {fileID: 259699990973771556, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 218992279}
+    - target: {fileID: 259699990973771556, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shot
+      objectReference: {fileID: 0}
     - target: {fileID: 259699990973771556, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Play
@@ -461,10 +474,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7719452499456749735, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7719452499505300607, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: _camera
       value: 
@@ -472,10 +481,6 @@ PrefabInstance:
     - target: {fileID: 7719452499971574964, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_Name
       value: PlayZoneBorder
-      objectReference: {fileID: 0}
-    - target: {fileID: 7719452499971574964, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7719452499971574965, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_RootOrder
@@ -1023,6 +1028,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1294055388, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_PrefabInstance: {fileID: 218992278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362370667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 259699990973771552, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+  m_PrefabInstance: {fileID: 218992278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1531523640 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 914879692, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
@@ -1079,6 +1089,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 180713562066711986, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 36895899}
     - target: {fileID: 4305348381865799077, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1178,6 +1192,17 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1932246992, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+--- !u!114 &2036446438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 180713562066711986, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+  m_PrefabInstance: {fileID: 2036446437}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753213713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0c90607b66ed9488492c26a3a21cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2066358698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1237,6 +1262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 9060000539664779788, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 1362370667}
     m_RemovedComponents:
     - {fileID: 885146957, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
