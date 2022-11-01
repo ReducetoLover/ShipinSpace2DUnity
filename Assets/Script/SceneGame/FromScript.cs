@@ -7,9 +7,13 @@ namespace Reducer
   {
     public static FromScript instance;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
       instance = this;
+    }
+    void Start()
+    {
+      
     }
     public object NameScript([System.Runtime.CompilerServices.CallerFilePath] string fileName = null)
     {
