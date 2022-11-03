@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 914879695, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: Minfirebot
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 914879695, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: Secondsmax
