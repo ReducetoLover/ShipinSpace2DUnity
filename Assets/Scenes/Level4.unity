@@ -888,21 +888,6 @@ MonoBehaviour:
   pause: {fileID: 2000362951}
   wantkill: 10
   nowkill: 0
---- !u!114 &1710654151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710654149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996278f24998b1e48a4b2b85fc572cc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hit: {fileID: 1710654152}
-  detonation: {fileID: 1629807667}
-  vfx: {fileID: 1629807666}
 --- !u!82 &1710654152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1146,6 +1131,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1400430639, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: vfx
+      value: 
+      objectReference: {fileID: 1629807666}
+    - target: {fileID: 1400430639, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: detonation
+      value: 
+      objectReference: {fileID: 1629807667}
     - target: {fileID: 2128947383933688729, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_RootOrder
       value: 1

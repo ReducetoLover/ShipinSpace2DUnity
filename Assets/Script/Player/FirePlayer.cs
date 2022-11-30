@@ -15,12 +15,12 @@ namespace Reducer
     public AudioSource Fire;
     private void Awake()
     {
-      instance = this;
+      
     }
 
     private void Start()
     {
-     
+      instance = this;
     }
     public void Shot()
     {

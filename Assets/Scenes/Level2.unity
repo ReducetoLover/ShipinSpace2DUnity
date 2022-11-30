@@ -1214,6 +1214,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1400430653, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: Fire
+      value: 
+      objectReference: {fileID: 1362370667}
+    - target: {fileID: 1400430653, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 753213713}
     - target: {fileID: 2128947383933688729, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1276,6 +1284,7 @@ PrefabInstance:
       objectReference: {fileID: 753213713}
     m_RemovedComponents:
     - {fileID: 885146957, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+    - {fileID: 1400430639, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
 --- !u!114 &2070842385 stripped
 MonoBehaviour:

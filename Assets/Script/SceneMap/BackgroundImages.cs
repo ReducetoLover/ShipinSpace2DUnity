@@ -17,7 +17,7 @@ namespace Reducer
     }
     private void SetImagesPosition()
     {
-      transform.position = new Vector2(transform.position.x, new SafeAreaData().GetMin().y);
+      transform.position = new Vector2(transform.position.x, new SafeAreaData().GetMax().y-5f);
       for (int i = 0; i < _sprites.Count; i++)
       {
         GameObject image = new GameObject("image", typeof(SpriteRenderer));

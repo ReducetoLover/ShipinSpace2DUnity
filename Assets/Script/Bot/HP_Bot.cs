@@ -34,7 +34,7 @@ namespace Reducer
         hpBar.sprite.size = new Vector2(hpBar.width, 0.56f);
         if (health <= 0)
         {
-         // Textkillinmap.instance.Scorekillbot();
+          Textkillinmap.instance.Scorekillbot();
           if (GameObject.Find("Achivekills") == true)
           {
             print($"bot+{FromScript.instance.NameScript()}");

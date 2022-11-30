@@ -9,7 +9,8 @@ namespace Reducer
     [SerializeField] private RaycastHit2D hitray;
     [SerializeField] private Transform player;
     [SerializeField] private Transform border;
-    public bool test = true;
+    RaycastHit2D hit;
+    public bool test = false;
 
     void Start()
     {
@@ -21,7 +22,7 @@ namespace Reducer
       int bitmask =  ~((1<<7)|(1<<6));
       float distation = Vector2.Distance(player.position, border.position);
       Debug.DrawRay(player.position, player.TransformDirection(Vector2.down) * distation, Color.green);
-      RaycastHit2D hit = Physics2D.Raycast(player.position, player.TransformDirection(Vector2.down), distation, bitmask);
+      hit = Physics2D.Raycast(player.position, player.TransformDirection(Vector2.down), distation, bitmask);
       //print(hit.collider.name);
       if (hit.collider.CompareTag("bot") && test == true)
       {
@@ -35,11 +36,7 @@ namespace Reducer
         test = true;
       }
     }
-    public float Bot()
-    {
 
-      return 4f;
-    }
   }
 }
 
