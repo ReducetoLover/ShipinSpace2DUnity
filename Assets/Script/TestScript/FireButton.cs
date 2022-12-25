@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Reducer
 {
     public class FireButton : MonoBehaviour
     {
+
          public static FireButton instance;
         public GameObject Fire;
         public GameObject Player;
@@ -14,16 +16,15 @@ namespace Reducer
         private void Awake()
         {
             instance = this;
-            //
-            //
-           
+      //
+      //
+         
+     
         }
         void Start()
         {
 
      // TestToggle.instance.Choice = PlayerPrefs.GetString("ChoiceControl");
-      print("1756465");
-      print(1756465);
       if (TestToggle.instance.Choice == "button")
       {
         //tog1.isOn = false;
@@ -32,7 +33,9 @@ namespace Reducer
         Player = GameObject.Find("Player");
         Fire = GameObject.Find("Fire");
         Player.GetComponent<RayPlayer>().enabled = false;
-        Fire.SetActive(true);
+        // Fire.SetActive(true);
+        Fire.GetComponent<Image>().enabled = true;
+        print(19);
 
       }
       else
@@ -43,7 +46,8 @@ namespace Reducer
         Player = GameObject.Find("Player");
         Fire = GameObject.Find("Fire");
         Player.GetComponent<RayPlayer>().enabled = true;
-        Fire.SetActive(false);
+        //Fire.SetActive(false);
+        Fire.GetComponent<Image>().enabled = false;
       }
     }
         //public void PutButton()
