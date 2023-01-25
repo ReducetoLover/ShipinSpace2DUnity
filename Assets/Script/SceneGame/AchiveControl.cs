@@ -139,7 +139,7 @@ namespace Reducer
         _timeLeft = 0;
 
       float minutes = Mathf.FloorToInt(_timeLeft / 60);
-      float seconds = Mathf.FloorToInt(_timeLeft % 60);
+      float seconds = Mathf.FloorToInt(_timeLeft % 180);
       timerText.text = ($"{seconds}/{time}");
     }
     public void Kill()

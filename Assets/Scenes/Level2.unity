@@ -205,6 +205,10 @@ PrefabInstance:
       propertyPath: _sceneName
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 259699990973771552, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 259699990973771554, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1222,6 +1226,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 753213713}
+    - target: {fileID: 1400430653, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2128947383933688729, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_RootOrder
       value: 2

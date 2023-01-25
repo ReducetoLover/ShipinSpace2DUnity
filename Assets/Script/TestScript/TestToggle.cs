@@ -11,7 +11,7 @@ namespace Reducer
     public string Choice;
     public static TestToggle instance;
 
-    void Start()
+    void Awake()
     {
       instance = this;
       Choice = PlayerPrefs.GetString("ChoiceControl");

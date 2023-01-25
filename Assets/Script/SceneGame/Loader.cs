@@ -13,7 +13,7 @@ namespace Reducer
     }
     public enum SceneName
     {
-      Map,
+      MapGame,
       Loader,
       Menu,
       Level1,

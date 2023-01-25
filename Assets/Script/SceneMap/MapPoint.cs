@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 namespace Reducer
 {
   [RequireComponent(typeof(CircleCollider2D), typeof(SpriteRenderer))]
-  public class MapPoint : MonoBehaviour, IPointerDownHandler
+  public class MapPoint : MonoBehaviour, IPointerClickHandler
   {
     string levelUnLock;
     public new string name;
@@ -26,7 +26,7 @@ namespace Reducer
       //PlayerPrefs.DeleteKey("levels");
       levelUnLock = PlayerPrefs.GetString("levels", "Level1");
     }
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
       LevelNameData level = new LevelNameData();
       level.Setname($"{name}");
