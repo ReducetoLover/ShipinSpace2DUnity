@@ -34,7 +34,7 @@ namespace Reducer
       }
       if (collision.tag == "ZoneBorder")
       {
-        Destroy(bullet.gameObject);
+        Destroy(bullet.gameObject,0.2f);
       }
     }
   }

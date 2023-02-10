@@ -57,9 +57,6 @@ namespace Reducer
       }
 
     }
-    public void Awake()
-    {
-    }
     public void _Time()
     {
       if (_timerOn)

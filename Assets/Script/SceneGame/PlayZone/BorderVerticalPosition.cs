@@ -22,7 +22,7 @@ namespace Reducer
       }
       else if (safeAreaPotion == Screen.safeArea.max)
       {
-        transform.position = new Vector2(transform.position.x, positionY );
+        transform.position = new Vector2(transform.position.x, positionY);
       }
     }
   }

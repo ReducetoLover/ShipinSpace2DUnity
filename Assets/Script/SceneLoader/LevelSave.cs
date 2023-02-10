@@ -16,6 +16,7 @@ namespace Reducer
     // Start is called before the first frame update
     void Start()
     {
+
       Unlocklevel = PlayerPrefs.GetInt("levels");
       print($"{ Unlocklevel}");
       switch (Unlocklevel)

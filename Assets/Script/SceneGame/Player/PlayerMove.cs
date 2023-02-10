@@ -13,7 +13,7 @@ namespace Reducer
     public GameObject paneldie;
     public TextMeshProUGUI paneldietext;
     public Pause pause;
-    private float _speed = 3f;
+    private float _speed = 4f;
     private Vector2 _direction = Vector2.zero;
 
     private void Awake()

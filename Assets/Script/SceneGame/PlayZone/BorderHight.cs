@@ -7,7 +7,7 @@ namespace Reducer
   {
     [SerializeField]
     private Camera _camera;
-    private const float FullSize = 2f;
+    private const float FullSize = 2.5f;
     private void Start()
     {
       SetSize();

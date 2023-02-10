@@ -2463,7 +2463,7 @@ TextureImporter:
       213: 5972358074290573035
     second: M484BulletCollection2 1_819
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -2523,6 +2523,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -2558,6 +2559,18 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -19856,11 +19869,11 @@ TextureImporter:
       M484BulletCollection2 1_417: 9022364886929895348
       M484BulletCollection2 1_597: 2868205730591871867
       M484BulletCollection2 1_608: -3170885411915514379
-      M484BulletCollection2 1_743: -6426559217503670190
+      M484BulletCollection2 1_794: -4988461968708295909
       M484BulletCollection2 1_155: -8103193234993913238
       M484BulletCollection2 1_726: 8183011524454400223
       M484BulletCollection2 1_785: -9133739752822258107
-      M484BulletCollection2 1_794: -4988461968708295909
+      M484BulletCollection2 1_743: -6426559217503670190
       M484BulletCollection2 1_59: 7541550874172521086
       M484BulletCollection2 1_439: 4284985597048118479
       M484BulletCollection2 1_450: 8942034577466581463
@@ -19911,8 +19924,8 @@ TextureImporter:
       M484BulletCollection2 1_733: 8693789088716161624
       M484BulletCollection2 1_752: 5857124492045769598
       M484BulletCollection2 1_360: -8340121497745626002
-      M484BulletCollection2 1_370: -4569100859001506934
       M484BulletCollection2 1_508: 5304872966589790748
+      M484BulletCollection2 1_370: -4569100859001506934
       M484BulletCollection2 1_184: -3392675533302714955
       M484BulletCollection2 1_724: -2502954377664613956
       M484BulletCollection2 1_308: -2898507460839125648
@@ -19927,34 +19940,34 @@ TextureImporter:
       M484BulletCollection2 1_725: 3323286902382208549
       M484BulletCollection2 1_97: -3848380215445194932
       M484BulletCollection2 1_431: 4910278025872030025
-      M484BulletCollection2 1_533: -388167016941115065
-      M484BulletCollection2 1_406: -5657613719429185750
       M484BulletCollection2 1_808: -4574904188871967743
+      M484BulletCollection2 1_406: -5657613719429185750
       M484BulletCollection2 1_793: 4303364844465681558
       M484BulletCollection2 1_529: -1953607656419183865
       M484BulletCollection2 1_708: -135967169442056254
+      M484BulletCollection2 1_533: -388167016941115065
       M484BulletCollection2 1_784: -8899694646346893895
       M484BulletCollection2 1_680: 3498151058447428690
       M484BulletCollection2 1_111: 8590098678203624636
       M484BulletCollection2 1_447: 5360948024010476077
       M484BulletCollection2 1_33: 380854928019657475
       M484BulletCollection2 1_100: -2625553661123508133
-      M484BulletCollection2 1_203: -444834004761806903
       M484BulletCollection2 1_571: 359126179090817142
-      M484BulletCollection2 1_396: -1815265635569222595
       M484BulletCollection2 1_474: -7887592253629384846
-      M484BulletCollection2 1_657: -8226446649800539678
-      M484BulletCollection2 1_280: -6346878067064377934
+      M484BulletCollection2 1_396: -1815265635569222595
       M484BulletCollection2 1_804: 1266802480587596929
+      M484BulletCollection2 1_203: -444834004761806903
+      M484BulletCollection2 1_280: -6346878067064377934
+      M484BulletCollection2 1_657: -8226446649800539678
       M484BulletCollection2 1_279: -6538954164375988192
       M484BulletCollection2 1_818: -4183247823066813642
       M484BulletCollection2 1_60: 3352836667710116295
       M484BulletCollection2 1_735: -7386400608240384496
       M484BulletCollection2 1_62: -3232589680553927900
-      M484BulletCollection2 1_674: -1815931498739544575
+      M484BulletCollection2 1_798: -2618461828435078751
       M484BulletCollection2 1_191: -5640784362615026824
       M484BulletCollection2 1_585: -4674616713569609290
-      M484BulletCollection2 1_798: -2618461828435078751
+      M484BulletCollection2 1_674: -1815931498739544575
       M484BulletCollection2 1_297: 1746314237920435300
       M484BulletCollection2 1_699: 1801317500662133837
       M484BulletCollection2 1_753: 5618563384927074756
@@ -20030,8 +20043,8 @@ TextureImporter:
       M484BulletCollection2 1_120: 3723392232286194008
       M484BulletCollection2 1_259: 7768063395394042747
       M484BulletCollection2 1_460: -1968528886195706860
-      M484BulletCollection2 1_563: -2759154114317140201
       M484BulletCollection2 1_714: 5838751996787123080
+      M484BulletCollection2 1_563: -2759154114317140201
       M484BulletCollection2 1_805: 3581363564299286574
       M484BulletCollection2 1_205: 3546191636781823200
       M484BulletCollection2 1_448: -6979248988035613991
@@ -20050,8 +20063,8 @@ TextureImporter:
       M484BulletCollection2 1_602: 930483268214210496
       M484BulletCollection2 1_413: 8753840730643474622
       M484BulletCollection2 1_228: 1819106149995565791
-      M484BulletCollection2 1_321: 2151337792309792942
       M484BulletCollection2 1_491: 6432469576605915647
+      M484BulletCollection2 1_321: 2151337792309792942
       M484BulletCollection2 1_266: -5431015790356543468
       M484BulletCollection2 1_740: -8138670709500369554
       M484BulletCollection2 1_729: -8564132587560375111
@@ -20116,8 +20129,8 @@ TextureImporter:
       M484BulletCollection2 1_757: -7853106620964887405
       M484BulletCollection2 1_645: 1780946597170407450
       M484BulletCollection2 1_712: -7672736771389309830
-      M484BulletCollection2 1_157: 3471117695799741052
       M484BulletCollection2 1_737: 3084840197595508598
+      M484BulletCollection2 1_157: 3471117695799741052
       M484BulletCollection2 1_437: -5516134469883551592
       M484BulletCollection2 1_380: 513574374424115937
       M484BulletCollection2 1_409: -8382605965483256495
@@ -20251,15 +20264,15 @@ TextureImporter:
       M484BulletCollection2 1_703: 8955543547399770745
       M484BulletCollection2 1_773: -4770503034192976608
       M484BulletCollection2 1_42: 7453601779490320853
-      M484BulletCollection2 1_112: 2798970395081812047
       M484BulletCollection2 1_509: 6574821738640623099
       M484BulletCollection2 1_105: 67246826998201299
       M484BulletCollection2 1_27: -6749237441318730244
       M484BulletCollection2 1_522: 6112254047379336020
-      M484BulletCollection2 1_524: 8638717490263146113
+      M484BulletCollection2 1_112: 2798970395081812047
       M484BulletCollection2 1_154: -2744367051729407640
       M484BulletCollection2 1_765: 569183151882059529
       M484BulletCollection2 1_644: 1680677914390994173
+      M484BulletCollection2 1_524: 8638717490263146113
       M484BulletCollection2 1_356: -5220478468899721016
       M484BulletCollection2 1_402: 6998094152769845420
       M484BulletCollection2 1_131: 3738253425836164549
@@ -20326,14 +20339,15 @@ TextureImporter:
       M484BulletCollection2 1_65: -868741003008025744
       M484BulletCollection2 1_428: -8740454684805309322
       M484BulletCollection2 1_436: 4292180707467174396
-      M484BulletCollection2 1_101: 1688442381467874061
-      M484BulletCollection2 1_7: -7906486452778789584
       M484BulletCollection2 1_489: -6303875155167682322
-      M484BulletCollection2 1_476: 4154713030542863674
-      M484BulletCollection2 1_21: -6092716599896730366
-      M484BulletCollection2 1_588: -1103899395170990942
-      M484BulletCollection2 1_639: -4036322415754010807
+      M484BulletCollection2 1_7: -7906486452778789584
       M484BulletCollection2 1_669: 5635156377602315434
+      M484BulletCollection2 1_101: 1688442381467874061
+      M484BulletCollection2 1_21: -6092716599896730366
+      M484BulletCollection2 1_639: -4036322415754010807
+      M484BulletCollection2 1_476: 4154713030542863674
+      M484BulletCollection2 1_588: -1103899395170990942
+      M484BulletCollection2 1_746: 1053556054703073030
       M484BulletCollection2 1_557: 3537574144370218224
       M484BulletCollection2 1_471: -4365865738293562658
       M484BulletCollection2 1_458: -6698630465754222501
@@ -20352,7 +20366,6 @@ TextureImporter:
       M484BulletCollection2 1_242: -5155120451631723056
       M484BulletCollection2 1_85: -8639276366983529119
       M484BulletCollection2 1_113: -8196674291453700897
-      M484BulletCollection2 1_746: 1053556054703073030
       M484BulletCollection2 1_245: -4313708712428455569
       M484BulletCollection2 1_377: -2148211609524861659
       M484BulletCollection2 1_603: 3200250057277630862
@@ -20431,12 +20444,12 @@ TextureImporter:
       M484BulletCollection2 1_505: -3495110849770443873
       M484BulletCollection2 1_152: 5535856769688168605
       M484BulletCollection2 1_81: -4136064047247725006
-      M484BulletCollection2 1_605: -416133645508634530
       M484BulletCollection2 1_467: 7290884011220014961
       M484BulletCollection2 1_224: 4651649630199885239
       M484BulletCollection2 1_142: 6552834580937952232
       M484BulletCollection2 1_121: -5534208012318052330
       M484BulletCollection2 1_375: 3786809315709787884
+      M484BulletCollection2 1_605: -416133645508634530
       M484BulletCollection2 1_574: 2143915608705126093
       M484BulletCollection2 1_159: -4666928852541953508
       M484BulletCollection2 1_1: -8461479687876817998
@@ -20448,8 +20461,8 @@ TextureImporter:
       M484BulletCollection2 1_144: -1614037754268173777
       M484BulletCollection2 1_623: 2663583051284867896
       M484BulletCollection2 1_300: 8108592952941168163
-      M484BulletCollection2 1_633: 4469986372982211422
       M484BulletCollection2 1_750: 436819174772478236
+      M484BulletCollection2 1_633: 4469986372982211422
       M484BulletCollection2 1_185: -607991164158875813
       M484BulletCollection2 1_354: -6545032696672792441
       M484BulletCollection2 1_394: 420726962962099191
