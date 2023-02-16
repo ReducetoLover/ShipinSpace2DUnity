@@ -13,14 +13,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Planets
   - Water
   - UI
   - PlayZoneBorder
   - LayerBullet
-  - 
-  - 
-  - 
+  - TextOnPlanets
+  - LockPlanets
+  - Menu
   - 
   - 
   - 
@@ -51,4 +51,19 @@ TagManager:
     locked: 0
   - name: Effects
     uniqueID: 1167427803
+    locked: 0
+  - name: UI
+    uniqueID: 4001736157
+    locked: 0
+  - name: Planets
+    uniqueID: 3743101327
+    locked: 0
+  - name: TextOnPlanets
+    uniqueID: 2957228241
+    locked: 0
+  - name: LockPlanets
+    uniqueID: 1888975195
+    locked: 0
+  - name: Menu
+    uniqueID: 2584637381
     locked: 0

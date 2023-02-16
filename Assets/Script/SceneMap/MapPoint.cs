@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace Reducer
 {
-  [RequireComponent(typeof(CircleCollider2D), typeof(SpriteRenderer))]
+  [RequireComponent(typeof(CircleCollider2D))]
   public class MapPoint : MonoBehaviour, IPointerClickHandler
   {
     string levelUnLock;

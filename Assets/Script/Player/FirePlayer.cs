@@ -31,16 +31,16 @@ namespace Reducer
     public void ShotAutomata()
     {
       StartCoroutine(FireBullet());
-      print("запуск");
+     // print("запуск");
     }
     public void StopCorutine()
     {
       StopAllCoroutines();
-      print("Stop");
+     // print("Stop");
     }
     IEnumerator FireBullet()
     {
-      print("корутина");
+      //print("корутина");
       yield return new WaitForSeconds(0.3f);
       Shot();
       StartCoroutine(FireBullet());

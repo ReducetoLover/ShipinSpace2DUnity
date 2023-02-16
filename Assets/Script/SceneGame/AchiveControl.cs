@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,91 +14,52 @@ namespace Reducer
     public TextMeshProUGUI timerText;
     public GameObject Killimage;
     public TextMeshProUGUI Textkills;
-    public float _timeLeft = 0f;
-    private bool _killtime = false;
-    private bool _timerOn = false;
-    private bool _killOn = false;
     public GameObject panelwin;
     public Pause pause;
-
+    public float _timeLeft;
+    private bool toggle = false;
+    private bool _timerOn = false;
+    private bool workkill = false;
     [SerializeField] public int wantkill = 5;
     public int nowkill = 0;
-    public static bool achiveKills = true;
-    public static bool achiveTime = true;
+    public bool achiveKills = true;
+    public bool achiveTime = true;
     private void Start()
     {
       _timeLeft = 0f;
-      _killtime = true;
+      toggle = true;
       instance = this;
-      //Timeimage.transform.position = new Vector3(-5.7f, 12f, 9);
-      // timerText.transform.position = new Vector3(-4.5f, 12.1f, 9);
-      // Textkills.transform.position = new Vector3(-4.5f, 10f, 9);
-      // Killimage.transform.position = new Vector3(-6f, 10f, 9);
-      if (GameObject.Find("Achivekills") == false)
+      print("Start");
+      if (GameObject.Find("AchiveKill"))
       {
-        _killOn = false;
-        achiveKills = false;
-      }
-      else
-      {
-        _killOn = true;
+        workkill = true;
         achiveKills = true;
       }
-      if (GameObject.Find("AchiveTime") == false)
-      {
-        _timerOn = false;
-        achiveTime = false;
-        //Textkills.transform.position = new Vector3(-4.5f, 12f, 9);
-        //Killimage.transform.position = new Vector3(-6f, 12f, 9);
-      }
       else
+      {
+        workkill = false;
+        achiveKills = false;
+      }
+      if (GameObject.Find("AchiveTime"))
       {
         _timerOn = true;
         achiveTime = true;
       }
-
-    }
-    public void _Time()
-    {
-      if (_timerOn)
+      else
       {
-        if (_timeLeft < time)
-        {
-          _timeLeft += Time.deltaTime;
-          UpdateTimeText();
-        }
-        else
-        {
-          _timeLeft = time;
-          _timerOn = false;
-          print($"{time} +{FromScript.instance.NameScript()}");
-        }
-
-
+        _timerOn = false;
+        achiveTime = false;
       }
     }
 
-
-    public void _Kill()
-    {
-      if (_killOn)
-      {
-        Kill();
-        if (nowkill == wantkill)
-        {
-          _killOn = false;
-        }
-
-      }
-    }
 
     public void Update()
     {
       if (Time.timeScale == 1)
       {
-        if (_killtime)
+        if (toggle)
         {
-          if (_timerOn! || _killOn)
+          if (_timerOn! || workkill)
           {
             if (achiveTime == true && achiveKills == true)
             {
@@ -122,7 +84,7 @@ namespace Reducer
               PlayerPrefs.SetInt("levels", SaveLevel);
             }
             print($"{PlayerPrefs.GetInt("levels")} ага+{FromScript.instance.NameScript()}");
-            _killtime = false;
+            toggle = false;
             panelwin.SetActive(true);
             pause.Enable(true);
           }
@@ -130,7 +92,53 @@ namespace Reducer
       }
 
     }
-    public void UpdateTimeText()
+    public void _Time()
+    {
+      if (_timerOn)
+      {
+        if (_timeLeft < time)
+        {
+          _timeLeft += Time.deltaTime;
+          UpdateTimeText();
+        }
+        else
+        {
+          _timeLeft = time;
+          _timerOn = false;
+          print($"{time} +{FromScript.instance.NameScript()}");
+        }
+
+
+      }
+    }
+    public void _Kill()
+    {
+      if (workkill)
+      {
+        Kill();
+        if (nowkill == wantkill)
+        {
+          workkill = false;
+        }
+
+      }
+    }
+
+    public void CountKills() //
+    {
+      if (nowkill < wantkill)
+      {
+        nowkill++;
+      }
+
+    }
+    public void Kill()//обновление счётчика килов
+    {
+      Textkills.text = ($"{nowkill}/{wantkill}");
+      Console.WriteLine(76876);
+    }
+
+    public void UpdateTimeText()//обновление таймера
     {
       if (_timeLeft < 0)
         _timeLeft = 0;
@@ -138,10 +146,6 @@ namespace Reducer
       float minutes = Mathf.FloorToInt(_timeLeft / 60);
       float seconds = Mathf.FloorToInt(_timeLeft % 180);
       timerText.text = ($"{seconds}/{time}");
-    }
-    public void Kill()
-    {
-      Textkills.text = ($"{nowkill}/{wantkill}");
     }
   }
 }

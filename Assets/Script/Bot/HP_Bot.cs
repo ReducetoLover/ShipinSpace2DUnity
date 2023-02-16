@@ -35,13 +35,12 @@ namespace Reducer
         if (health <= 0)
         {
           Textkillinmap.instance.Scorekillbot();
-          if (GameObject.Find("Achivekills") == true)
+          if (GameObject.Find("AchiveKill") == true)
           {
             print($"bot+{FromScript.instance.NameScript()}");
-            if (AchiveControl.instance.nowkill < AchiveControl.instance.wantkill)
-            {
-              AchiveControl.instance.nowkill += 1;
-            }
+            AchiveControl.instance.CountKills();
+            print("Засчитало кил");
+           
           }
           if (animated == 0)
           {

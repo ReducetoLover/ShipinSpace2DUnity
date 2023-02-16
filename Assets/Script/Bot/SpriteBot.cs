@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Reducer
 {
-    public class SpriteBot : MonoBehaviour
-    {
-      [SerializeField] private Sprite[] sprites;
+  public class SpriteBot : MonoBehaviour
+  {
+    [SerializeField] private Sprite[] sprites;
     private void Start()
     {
-      
+
     }
     void Awake()
     {
