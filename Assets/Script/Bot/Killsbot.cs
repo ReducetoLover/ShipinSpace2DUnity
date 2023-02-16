@@ -47,5 +47,6 @@ namespace Reducer
     {
       killText.text = ($"{nowkill}/{wantkill}");
     }
+
   }
 }

@@ -4,7 +4,7 @@ namespace Reducer
 {
   public class BulletBot : MonoBehaviour
   {
-    [SerializeField,AttentionField]
+    [SerializeField, AttentionField]
     private GameObject bullet;
     public int damage = 1;
     [SerializeField]
@@ -19,6 +19,12 @@ namespace Reducer
       {
         Destroy(bullet.gameObject);
       }
+      if (collision.tag == "ZoneBorder")
+      {
+        print("пролетела");
+        Destroy(bullet.gameObject);
+      }
+
     }
   }
 }

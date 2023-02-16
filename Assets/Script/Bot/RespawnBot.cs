@@ -8,6 +8,7 @@ namespace Reducer
 {
   public class RespawnBot : MonoBehaviour
   {
+    GameObject Upborder;
     public string GetCurrentFileName([System.Runtime.CompilerServices.CallerFilePath] string fileName = null)
     {
       return "\nfrom " + fileName[65..^2];
@@ -30,6 +31,7 @@ namespace Reducer
 
     void Start()
     {
+      Upborder = GameObject.Find("Up");
       instance = this;
       StartCoroutine(TimeBot());
     }
@@ -38,8 +40,7 @@ namespace Reducer
     {
       yield return new WaitForSeconds(Random.Range(Secondsmin, Secondsmax));
       float x = Random.Range(-5f, 5f);
-     
-      Destroy(Instantiate(bot.gameObject, new Vector3(x, 14, 9), Quaternion.identity), 15f);
+      Destroy(Instantiate(bot.gameObject, new Vector2(x, Upborder.transform.position.y+1f), Quaternion.identity), 15f);
       StartCoroutine(TimeBot());
       print($"{x}+бот,+{FromScript.instance.NameScript()}");
     }

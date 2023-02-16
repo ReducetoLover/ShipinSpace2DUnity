@@ -16,7 +16,14 @@ namespace Reducer
     {
       Vector2 safeAreaPotion = _isUp ? Screen.safeArea.max : Screen.safeArea.min;
       float positionY = _camera.ScreenToWorldPoint(safeAreaPotion).y;
-      transform.position = new Vector2(transform.position.x, positionY);
+      if (safeAreaPotion == Screen.safeArea.min)
+      {
+        transform.position = new Vector2(transform.position.x, positionY);
+      }
+      else if (safeAreaPotion == Screen.safeArea.max)
+      {
+        transform.position = new Vector2(transform.position.x, positionY);
+      }
     }
   }
 }

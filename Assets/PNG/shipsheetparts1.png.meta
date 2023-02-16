@@ -318,7 +318,7 @@ TextureImporter:
       213: 3450898698501293167
     second: shipsheetparts1_104
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -378,6 +378,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -413,6 +414,18 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2665,10 +2678,10 @@ TextureImporter:
       shipsheetparts1_24: 3311591402687617449
       shipsheetparts1_21: -1301135204933567476
       shipsheetparts1_20: -4357900746154760543
-      shipsheetparts1_39: -3677928537852379720
       shipsheetparts1_67: -1257466760715855946
-      shipsheetparts1_2: 7109652984187480007
+      shipsheetparts1_39: -3677928537852379720
       shipsheetparts1_51: -926010187913787508
+      shipsheetparts1_2: 7109652984187480007
       shipsheetparts1_15: -8145180189636718561
       shipsheetparts1_44: -6241481501802661547
       shipsheetparts1_56: -6309866943567921281
