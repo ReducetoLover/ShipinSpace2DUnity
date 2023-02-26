@@ -15,7 +15,7 @@ namespace Reducer
     }
     public static RespawnBot instance;
     [SerializeField]
-    public GameObject bot;
+    private GameObject bot;
     [SerializeField]
     private int Secondsmin;
     [SerializeField]

@@ -20,7 +20,8 @@ namespace Reducer
       Level2,
       Level3,
       Level4,
-      Level5
+      Level5,
+      Scene3d
     }
   }
 }

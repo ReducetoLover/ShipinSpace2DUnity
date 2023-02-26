@@ -33,7 +33,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6545936251162263960}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 259699991515243778}
   - component: {fileID: 259699991515243780}
   - component: {fileID: 259699991515243779}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: PanelPause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +436,7 @@ RectTransform:
   - {fileID: 259699991307602471}
   - {fileID: 7069854836629267328}
   m_Father: {fileID: 6545936251162263960}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1228,9 +1228,9 @@ RectTransform:
   - {fileID: 2297654071828704425}
   - {fileID: 5533276475993527444}
   - {fileID: 259699992880695055}
-  - {fileID: 259699991515243778}
   - {fileID: 259699990973771553}
   - {fileID: 4415399735534531837}
+  - {fileID: 259699991515243778}
   - {fileID: 6545936250692801526}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1632,6 +1632,10 @@ PrefabInstance:
       value: Reducer.Loader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8921450606460106106, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921450606460106106, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_fontStyle
       value: 1
       objectReference: {fileID: 0}
@@ -1653,7 +1657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8921450608233759440, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8921450608233759440, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1730,6 +1734,10 @@ PrefabInstance:
     - target: {fileID: 8921450608233759441, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_Name
       value: PanelDie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921450608233759441, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8921450608465952465, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_AnchoredPosition.x

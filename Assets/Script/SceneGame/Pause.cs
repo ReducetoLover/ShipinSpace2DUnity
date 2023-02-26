@@ -24,9 +24,14 @@ namespace Reducer
     {
       if (pause)
       {
-        OnPaused.Invoke();
-        Enable(true);
+        if (!GameObject.Find("PanelDie"))
+        {
+          OnPaused.Invoke();
+          Enable(true);
+        }
+
       }
     }
   }
 }
+
