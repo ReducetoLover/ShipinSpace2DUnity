@@ -1,18 +1,10 @@
-using System.Security.Principal;
 using UnityEngine;
 
 namespace Reducer
 {
-  public class MainCamera : MonoBehaviour
+  public class FollowPlayer : MonoBehaviour
   {
-    public GameObject player;
-    public GameObject camera;
-    private Vector3 offset;
-
-    void Start()
-    {
-     
-    }
+    [SerializeField] private GameObject player;
 
     private void Update()
     {

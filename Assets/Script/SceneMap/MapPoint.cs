@@ -23,14 +23,13 @@ namespace Reducer
     }
     void Start()
     {
-      //PlayerPrefs.DeleteKey("levels");
       levelUnLock = PlayerPrefs.GetString("levels", "Level1");
     }
     public void OnPointerClick(PointerEventData eventData)
     {
       LevelNameData level = new LevelNameData();
       level.Setname($"{name}");
-      level.SetLevelIndex(_index);
+     // level.SetLevelIndex(_index);
       OnClick.Invoke();
 
     }

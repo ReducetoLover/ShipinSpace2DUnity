@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Reducer
 {
@@ -77,13 +76,8 @@ namespace Reducer
           }
           else
           {
-            SaveLevel = SceneManager.GetActiveScene().buildIndex + 1;
-            print($"{SaveLevel} + {PlayerPrefs.GetInt("levels")}+{FromScript.instance.NameScript()}");
-            if (SaveLevel > PlayerPrefs.GetInt("levels"))
-            {
-              PlayerPrefs.SetInt("levels", SaveLevel);
-            }
-            print($"{PlayerPrefs.GetInt("levels")} ага+{FromScript.instance.NameScript()}");
+            LevelSave.instance.SaveInPlayerPrefs();
+            // print($"{PlayerPrefs.GetInt("levels")} ага+{FromScript.instance.NameScript()}");
             toggle = false;
             panelwin.SetActive(true);
             pause.Enable(true);
@@ -92,7 +86,7 @@ namespace Reducer
       }
 
     }
-    public void _Time()
+    public void _Time() //включение/выключение запуска времени  
     {
       if (_timerOn)
       {
@@ -111,7 +105,7 @@ namespace Reducer
 
       }
     }
-    public void _Kill()
+    public void _Kill() //включение/выключение посчёта килов
     {
       if (workkill)
       {
@@ -124,7 +118,7 @@ namespace Reducer
       }
     }
 
-    public void CountKills() //
+    public void CountKills() //подсчёт килов
     {
       if (nowkill < wantkill)
       {
@@ -141,8 +135,9 @@ namespace Reducer
     public void UpdateTimeText()//обновление таймера
     {
       if (_timeLeft < 0)
+      {
         _timeLeft = 0;
-
+      }
       float minutes = Mathf.FloorToInt(_timeLeft / 60);
       float seconds = Mathf.FloorToInt(_timeLeft % 180);
       timerText.text = ($"{seconds}/{time}");

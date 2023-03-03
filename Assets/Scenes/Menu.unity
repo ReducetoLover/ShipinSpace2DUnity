@@ -204,11 +204,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f98319cf7fd521d469cbf98f86363df3, type: 3}
---- !u!4 &889523251 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7116343651532431274, guid: f98319cf7fd521d469cbf98f86363df3, type: 3}
-  m_PrefabInstance: {fileID: 866925100}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927033705
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +215,6 @@ GameObject:
   - component: {fileID: 927033707}
   - component: {fileID: 927033711}
   - component: {fileID: 927033710}
-  - component: {fileID: 927033708}
   - component: {fileID: 927033709}
   - component: {fileID: 927033706}
   m_Layer: 0
@@ -280,19 +274,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &927033708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927033705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc798162fefd6c44fa996097e4b12dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  part: {fileID: 8747825498926775553, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
 --- !u!114 &927033709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc281f3b82db1c8448b54779348a3368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: 1
+  _sceneName: 8
 --- !u!114 &927033710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,18 +334,6 @@ MonoBehaviour:
       - m_Target: {fileID: 927033709}
         m_TargetAssemblyTypeName: Reducer.Loader, Assembly-CSharp
         m_MethodName: Load
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 927033708}
-        m_TargetAssemblyTypeName: Reducer.Particle, Assembly-CSharp
-        m_MethodName: stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -448,7 +417,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1097516310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097516312}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1097516312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097516310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.01252, y: -7.594927, z: -31.918804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1258414378
 PrefabInstance:
@@ -570,7 +570,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ship in Space 2d
+  m_text: 'Ship in Space
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -597,7 +599,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.4
+  m_fontSize: 120
   m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -747,7 +749,7 @@ RectTransform:
   - {fileID: 927033707}
   - {fileID: 1261605468}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -759,11 +761,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 889523251}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8747825498926775553, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
+      propertyPath: ShapeModule.type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747825498926775553, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
+      propertyPath: SizeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747825498926775553, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     - target: {fileID: 8747825498926775554, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8747825498926775554, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -775,7 +789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8747825498926775554, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8747825498926775554, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
       propertyPath: m_LocalRotation.w

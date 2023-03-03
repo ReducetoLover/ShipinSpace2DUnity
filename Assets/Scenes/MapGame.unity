@@ -813,15 +813,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ab9694d619ba74da0686cdad4e3caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level2: {fileID: 1659275944}
-  Level3: {fileID: 1123464287}
-  Level4: {fileID: 1604998031}
-  Level5: {fileID: 1143344407}
   Level2lock: {fileID: 1728396036}
   Level3lock: {fileID: 1714944457}
   Level4lock: {fileID: 85255748}
   Level5lock: {fileID: 1546513427}
-  Unlocklevel: 5
+  Unlocklevel: 0
 --- !u!114 &708786368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,8 +830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecddbfe64f5f6f4488e94dbd9a890de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointLayable: {fileID: 0}
-  _pointLocked: {fileID: 0}
   OnGenerated:
     m_PersistentCalls:
       m_Calls:
@@ -1356,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7560907086441774087, guid: cc213e1153818b64592264a918aefde0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7560907087996805657, guid: cc213e1153818b64592264a918aefde0, type: 3}
       propertyPath: m_Layer
@@ -1387,7 +1381,6 @@ GameObject:
   m_Component:
   - component: {fileID: 816930923}
   - component: {fileID: 816930928}
-  - component: {fileID: 816930927}
   - component: {fileID: 816930926}
   - component: {fileID: 816930925}
   - component: {fileID: 816930924}
@@ -1430,7 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc281f3b82db1c8448b54779348a3368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: 2
+  _sceneName: 0
 --- !u!114 &816930925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,19 +1462,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816930922}
   m_CullTransparentMesh: 1
---- !u!114 &816930927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816930922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc798162fefd6c44fa996097e4b12dd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  part: {fileID: 8747825498926775553, guid: d9e59cb397147f447a9e63445ce23dee, type: 3}
 --- !u!114 &816930928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,18 +1509,6 @@ MonoBehaviour:
       - m_Target: {fileID: 816930924}
         m_TargetAssemblyTypeName: Reducer.Loader, Assembly-CSharp
         m_MethodName: Load
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 816930927}
-        m_TargetAssemblyTypeName: Reducer.Particle, Assembly-CSharp
-        m_MethodName: play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2907,7 +2875,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123464287}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f41a0be1f7342d4ebb99c1243069eb9, type: 3}
   m_Name: 
@@ -3354,7 +3322,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1888975195
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1022210652392369207, guid: d89de3d581c820e47921804df6d1392f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d89de3d581c820e47921804df6d1392f, type: 3}
 --- !u!1001 &1385740693
 PrefabInstance:
@@ -3369,7 +3338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 404531132, guid: f8cfe011801f21840aa4e24dc960492a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 404531132, guid: f8cfe011801f21840aa4e24dc960492a, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3889,7 +3858,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1957680959169560507, guid: a16a1402ead0ab848852c4e1b570b81c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a16a1402ead0ab848852c4e1b570b81c, type: 3}
 --- !u!1 &1479969839
 GameObject:
@@ -4529,7 +4499,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604998031}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f41a0be1f7342d4ebb99c1243069eb9, type: 3}
   m_Name: 

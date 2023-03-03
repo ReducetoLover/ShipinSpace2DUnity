@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc281f3b82db1c8448b54779348a3368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: 1
+  _sceneName: 8
 --- !u!1 &259699991515243777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +1803,10 @@ PrefabInstance:
     - target: {fileID: 1686108243212218135, guid: a0a318f80448baa488e9e87c0e8983a6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Reducer.Pause, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686108243212218152, guid: a0a318f80448baa488e9e87c0e8983a6, type: 3}
+      propertyPath: _sceneName
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1686108245131843912, guid: a0a318f80448baa488e9e87c0e8983a6, type: 3}
       propertyPath: m_Pivot.x
