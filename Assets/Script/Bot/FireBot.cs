@@ -17,14 +17,14 @@ namespace Reducer
     // Start is called before the first frame update
     void Start()
     {
-
+      instance = this;
       StartCoroutine(BotFire());
     }
 
     // Update is called once per frame
-    void Update()
+    public void BotFireOn()
     {
-      instance = this;
+      StartCoroutine(BotFire());
     }
     IEnumerator BotFire()
     {

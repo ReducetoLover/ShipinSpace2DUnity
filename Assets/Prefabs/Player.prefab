@@ -137,7 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 900411454509755104}
   border: {fileID: 0}
-  test: 1
 --- !u!50 &4305348381865799081
 Rigidbody2D:
   serializedVersion: 4
@@ -268,6 +267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4305348381865799083}
     m_Modifications:
+    - target: {fileID: 8769560436658293296, guid: f7a299a6bd47b044ea873dbf854926ff, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3479879608061894741, guid: 0d0689a406fe36e45a4bcf1fc5a8001c, type: 3}
     - target: {fileID: 8769560436658293297, guid: f7a299a6bd47b044ea873dbf854926ff, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

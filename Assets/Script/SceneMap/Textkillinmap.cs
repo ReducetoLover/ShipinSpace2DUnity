@@ -13,12 +13,12 @@ namespace Reducer
     // Start is called before the first frame update
     private void Awake()
     {
-      
+      instance = this;
     }
     void Start()
     {
       
-      instance = this;
+      
       dietxt.text = ($"{PlayerPrefs.GetInt("Diescore")} died");
       killtxt.text = ($"{PlayerPrefs.GetInt("kill")} destroyed");
       print($"{kill}+ {killtxt.text}");
@@ -26,10 +26,8 @@ namespace Reducer
 
     public void Scorekillbot()
     {
-      kill = PlayerPrefs.GetInt("kill");
       print($"засчитало+{FromScript.instance.NameScript()}");
-      kill += 1;
-      PlayerPrefs.SetInt("kill", kill);
+      PlayerPrefs.SetInt("kill", PlayerPrefs.GetInt("kill")+1);
     }
     // Update is called once per frame
     void Update()

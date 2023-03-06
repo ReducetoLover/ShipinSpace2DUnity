@@ -9,6 +9,8 @@ TagManager:
   - bulletbot
   - ZoneBorder
   - ButtonFire
+  - ZoneBorderLeft
+  - ZoneBorderRight
   layers:
   - Default
   - TransparentFX

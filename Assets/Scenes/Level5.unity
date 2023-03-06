@@ -417,10 +417,26 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 515657925}
+    - target: {fileID: 7719452499378160189, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719452499378160191, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_TagString
+      value: ZoneBorderRight
+      objectReference: {fileID: 0}
     - target: {fileID: 7719452499383216760, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 515657925}
+    - target: {fileID: 7719452499383216763, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719452499383216765, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
+      propertyPath: m_TagString
+      value: ZoneBorderLeft
+      objectReference: {fileID: 0}
     - target: {fileID: 7719452499456749730, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: _camera
       value: 
@@ -699,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 914879695, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: minXP
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 914879695, guid: 427416bc8ae7c624f9f8a175093a3c29, type: 3}
       propertyPath: Maxfirebot
@@ -1072,10 +1088,6 @@ PrefabInstance:
     - target: {fileID: 4415399735500392672, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Enable
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415399735500392701, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
-      propertyPath: _sceneName
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5533276475993527444, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_SizeDelta.x

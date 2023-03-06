@@ -9,7 +9,7 @@ namespace Reducer
       private Vector3 _direction = Vector3.zero;
       [SerializeField]private DynamicJoystick _joystick;
     [SerializeField]private Rigidbody _rigidBody;
-    private float _speed = 4f;
+    private float _speed = 1f;
     // Start is called before the first frame update
     private void Awake()
     {

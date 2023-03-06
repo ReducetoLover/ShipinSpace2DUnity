@@ -19,12 +19,14 @@ namespace Reducer
     }
     private void Start()
     {
+      
       UnlockLevelsInMap();
     }
     public void SaveInPlayerPrefs()
     {
-      Unlocklevel = SceneManager.GetActiveScene().buildIndex + 1;
-      if (Unlocklevel > PlayerPrefs.GetInt("levels"))
+      
+
+      if (SceneManager.GetActiveScene().buildIndex + 1 > PlayerPrefs.GetInt("levels"))
       {
         PlayerPrefs.SetInt("levels", SceneManager.GetActiveScene().buildIndex + 1);
       }
