@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 7719452499456749730}
   m_Layer: 0
   m_Name: Up
-  m_TagString: ZoneBorder
+  m_TagString: ZoneUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

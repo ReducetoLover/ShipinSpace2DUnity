@@ -11,14 +11,14 @@ namespace Reducer
     [SerializeField]
     public float speed = 5f;
     SafeAreaData saveSafeArea = new SafeAreaData();
-    Vector2 min;
+    public Vector2 min;
     Vector2 max;
 
     // Start is called before the first frame update
     void Start()
     {
-      min = Camera.main.ViewportToWorldPoint(Screen.safeArea.max);
-      max = Camera.main.ViewportToWorldPoint(Screen.safeArea.min);
+      //min = Camera.main.ViewportToWorldPoint(Screen.safeArea.max);
+      //max = Camera.main.ViewportToWorldPoint(Screen.safeArea.min);
     }
 
     // Update is called once per frame

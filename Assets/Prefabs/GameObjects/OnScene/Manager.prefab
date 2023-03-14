@@ -139,12 +139,15 @@ GameObject:
   - component: {fileID: 2128947383933688729}
   - component: {fileID: 2128947383933688728}
   - component: {fileID: 2128947383933688730}
-  - component: {fileID: 885146957}
   - component: {fileID: 5939191618906970934}
-  - component: {fileID: 1558845314977437459}
-  - component: {fileID: 1400430645}
-  - component: {fileID: 1400430639}
-  - component: {fileID: 1400430653}
+  - component: {fileID: 8136276051221257894}
+  - component: {fileID: 885146959}
+  - component: {fileID: 885146957}
+  - component: {fileID: 885146958}
+  - component: {fileID: 885146961}
+  - component: {fileID: 885146962}
+  - component: {fileID: 885146963}
+  - component: {fileID: 3144350492956396071}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -195,29 +198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
---- !u!114 &885146957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128947383933688735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ac6204ffa2c6e49a8dc9b5a60b9192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SaveLevel: 0
-  time: 30
-  Timeimage: {fileID: 0}
-  timerText: {fileID: 0}
-  Killimage: {fileID: 0}
-  Textkills: {fileID: 0}
-  _timeLeft: 0
-  panelwin: {fileID: 0}
-  pause: {fileID: 0}
-  wantkill: 5
-  nowkill: 0
 --- !u!81 &5939191618906970934
 AudioListener:
   m_ObjectHideFlags: 0
@@ -226,7 +206,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128947383933688735}
   m_Enabled: 1
---- !u!114 &1558845314977437459
+--- !u!114 &8136276051221257894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38022d10117bc5409e0949998d516d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1400430645
+--- !u!82 &885146959
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,7 +314,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1400430639
+--- !u!114 &885146957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128947383933688735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ac6204ffa2c6e49a8dc9b5a60b9192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaveLevel: 0
+  time: 30
+  Timeimage: {fileID: 0}
+  timerText: {fileID: 0}
+  Killimage: {fileID: 0}
+  Textkills: {fileID: 0}
+  panelwin: {fileID: 0}
+  pause: {fileID: 0}
+  _timeLeft: 0
+  wantkill: 7
+  nowkill: 0
+  achiveKills: 1
+  achiveTime: 1
+--- !u!114 &885146958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,10 +351,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996278f24998b1e48a4b2b85fc572cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 1400430645}
+  hit: {fileID: 885146959}
   detonation: {fileID: 0}
   vfx: {fileID: 0}
---- !u!114 &1400430653
+--- !u!114 &885146961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128947383933688735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f408c93497ebd444ab0ed548e92a37e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bot: {fileID: 4806259641709365380, guid: 68319ab0a6e427544ac4a6b3850b689d, type: 3}
+  Secondsmin: 2
+  Secondsmax: 6
+  minXP: 2
+  maxXP: 5
+  Minfirebot: 2
+  Maxfirebot: 5
+--- !u!114 &885146962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128947383933688735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5cf9f9190fc6046929deddcc2a0dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPaused:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &885146963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128947383933688735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881377832df114f42871b4648ecd6483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicObj: {fileID: 0}
+  mixer: {fileID: 24300002, guid: 5bc1f877607c2864bbce0511baae18b6, type: 2}
+--- !u!114 &3144350492956396071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

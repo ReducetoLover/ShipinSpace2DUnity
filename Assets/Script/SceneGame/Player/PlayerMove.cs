@@ -6,24 +6,25 @@ namespace Reducer
   [RequireComponent(typeof(Rigidbody2D))]
   public class PlayerMove : MonoBehaviour
   {
-    [SerializeField]
-    private DynamicJoystick _joystick;
+    [SerializeField] private DynamicJoystick _joystick;
     private int Diescore;
-    private Rigidbody2D _rigidbody2D;
-    public GameObject paneldie;
-    public TextMeshProUGUI paneldietext;
+    [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private GameObject paneldie;
+    [SerializeField] private TextMeshProUGUI paneldietext;
     public Pause pause;
     private float _speed = 4f;
     private Vector2 _direction = Vector2.zero;
 
     private void Awake()
     {
-     
-      _rigidbody2D = GetComponent<Rigidbody2D>();
+      _joystick = FindObjectOfType<DynamicJoystick>();
+      pause = (Pause)FindObjectOfType(typeof(Pause));
     }
     private void Start()
     {
+
       Diescore = PlayerPrefs.GetInt("Diescore");
+      _rigidbody2D = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
     {

@@ -11,6 +11,12 @@ TagManager:
   - ButtonFire
   - ZoneBorderLeft
   - ZoneBorderRight
+  - PanelWin
+  - PanelPause
+  - PanelDie
+  - Manager
+  - Joystick
+  - ZoneUp
   layers:
   - Default
   - TransparentFX

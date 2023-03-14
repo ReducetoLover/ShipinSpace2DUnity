@@ -7,18 +7,23 @@ namespace Reducer
   {
     [SerializeField]
     private UnityEvent OnPaused;
-    void Update()
+    void FixedUpdate()
+    {
+      GamePause();
+    }
+    public void Enable(bool value)
+    {
+      print($"Активания паузы+{Singleton<FromScript>.Instance.NameScript()}");
+      Time.timeScale = value ? 0 : 1;
+    }
+    public void GamePause()
     {
       if (Input.GetKey(KeyCode.Escape))
       {
         OnPaused.Invoke();
         Enable(true);
+
       }
-    }
-    public void Enable(bool value)
-    {
-      print($"23+{FromScript.instance.NameScript()}");
-      Time.timeScale = value ? 0 : 1;
     }
     private void OnApplicationPause(bool pause)
     {

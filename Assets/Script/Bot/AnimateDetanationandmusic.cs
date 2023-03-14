@@ -6,13 +6,12 @@ namespace Reducer
   {
     public AudioSource hit;
     public AudioSource detonation;
-    public static AnimateDetanationandmusic instance;
     [SerializeField]
     private ParticleSystem vfx;
     // Start is called before the first frame update
     void Start()
     {
-      instance = this;
+
     }
     public void Hit()
     {
@@ -20,7 +19,7 @@ namespace Reducer
     }
     public void PlayAnimateDetonationBot(Vector3 a)
     {
-      print($"взрыв+{FromScript.instance.NameScript()}");
+      print($"взрыв+{Singleton<FromScript>.Instance.NameScript()}");
       vfx.transform.position = a;
       Instantiate(vfx);
       vfx.Play();

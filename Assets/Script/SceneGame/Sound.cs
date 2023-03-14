@@ -19,10 +19,10 @@ namespace Reducer
     void Start()
     {
       Music = PlayerPrefs.GetInt("SaveMusic");
-      print($"Music +{ FromScript.instance.NameScript()}");
+      print($"Music +{Singleton<FromScript>.Instance.NameScript()}");
       if (Music == 0)
       {
-        print($"работает+{FromScript.instance.NameScript()}");
+        print($"работает+{Singleton<FromScript>.Instance.NameScript()}");
         MusicObj.GetComponent<Image>().color = new Vector4(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1f);
         mixer.audioMixer.SetFloat("MusicVolume", 0);
       }
@@ -55,7 +55,7 @@ namespace Reducer
       }
       PlayerPrefs.SetInt("SaveMusic", Music);
       PlayerPrefs.Save();
-      print($"Music+{FromScript.instance.NameScript()}");
+      print($"Music+{Singleton<FromScript>.Instance.NameScript()}");
 
     }
   }

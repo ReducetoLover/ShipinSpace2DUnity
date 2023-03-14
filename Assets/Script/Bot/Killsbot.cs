@@ -5,7 +5,6 @@ namespace Reducer
 {
   public class Killsbot : MonoBehaviour
   {
-    public static Killsbot instance;
     public GameObject kill;
     public BotTranslate Bot;
     [SerializeField] public TextMeshProUGUI killText;
@@ -14,10 +13,7 @@ namespace Reducer
     public GameObject panelwin;
     public int nowkill = 0;
     public bool _pause = false;
-    void Awake()
-    {
-      instance = this;
-    }
+
     void Start()
     {
       _pause = true;
@@ -35,7 +31,7 @@ namespace Reducer
           panelwin.SetActive(true);
           pause.Enable(true);
         }
-        else if (GameObject.Find("AchiveTime") == true && Timer.instance._timerOn == false)
+        else if (GameObject.Find("AchiveTime") == true && Singleton<Timer>.Instance._timerOn == false)
         {
           _pause = false;
           panelwin.SetActive(true);

@@ -13,11 +13,6 @@ namespace Reducer
     [SerializeField]
     private Transform gun;
     public AudioSource Fire;
-    private void Awake()
-    {
-      
-    }
-
     private void Start()
     {
       instance = this;
@@ -26,27 +21,21 @@ namespace Reducer
     {
       Fire.Play();
       Instantiate(bullet.gameObject, gun.position, gun.rotation);
-      
     }
     public void ShotAutomata()
     {
       StartCoroutine(FireBullet());
-     // print("запуск");
     }
     public void StopCorutine()
     {
       StopAllCoroutines();
-     // print("Stop");
     }
     IEnumerator FireBullet()
     {
-      //print("корутина");
       yield return new WaitForSeconds(0.3f);
       Shot();
       StartCoroutine(FireBullet());
-
     }
-
   }
 }
 

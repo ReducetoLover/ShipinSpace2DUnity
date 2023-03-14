@@ -4,28 +4,11 @@ namespace Reducer
 {
   public class DestroyEffect : MonoBehaviour
   {
-    //public Animation panelyoudie;
     public Animation destroybot;
-    public static DestroyEffect instance;
-
-    void Start()
-    {
-      instance = this;
-    }
     public void Die()
     {
-      print($"animate+{FromScript.instance.NameScript()}");
-      //GetComponent<Animation>().Play("bot");
+      print($"animate+{Singleton<FromScript>.Instance.NameScript()}");
       destroybot.Play("bot");
-    }
-    //public void Panel()
-    //{
-    //  print("Panel");
-    //  panelyoudie.Play();
-    //}
-    void Update()
-    {
-
     }
   }
 }

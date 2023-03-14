@@ -10,20 +10,27 @@ namespace Reducer
     private bool workRay = false;
     private void FixedUpdate()
     {
+      CreateRay();
+      CheckCollider(ref workRay);
+    }
+    private void CreateRay()
+    {
       int bitmask = ~((1 << 7) | (1 << 6));
       float distation = Vector2.Distance(player.position, border.position);
       Debug.DrawRay(player.position, player.TransformDirection(Vector2.down) * distation, Color.green);
       hit = Physics2D.Raycast(player.position, player.TransformDirection(Vector2.down), distation, bitmask);
-      //print(hit.collider.name);
+    }
+    public void CheckCollider(ref bool workRay)
+    {
       if (hit.collider.CompareTag("bot") && workRay == true)
       {
-        FirePlayer.instance.ShotAutomata();
+        Singleton<FirePlayer>.Instance.ShotAutomata();
         workRay = false;
       }
       else if (!hit.collider.CompareTag("bot") && workRay == false)
       {
         print("стопколлайдер");
-        FirePlayer.instance.StopAllCoroutines();
+        Singleton<FirePlayer>.Instance.StopAllCoroutines();
         workRay = true;
       }
     }

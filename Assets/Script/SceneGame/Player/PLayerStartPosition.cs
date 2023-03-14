@@ -7,7 +7,7 @@ namespace Reducer
     private const float Offset = 3f;
     private void Start()
     {
-
+      
     }
     private void SetPosition()
     {

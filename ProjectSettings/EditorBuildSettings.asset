@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MapGame.unity
     guid: 6bcb241d20446524782f17da44c556ff
   - enabled: 1
+    path: Assets/Scenes/Infinity.unity
+    guid: d6069f7f89c235e4381593a7dade648e
+  - enabled: 1
     path: Assets/Scenes/Loader.unity
     guid: 3763a1aae81bbdf4c9e6db698d586e0f
   m_configObjects: {}

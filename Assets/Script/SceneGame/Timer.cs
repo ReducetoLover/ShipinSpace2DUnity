@@ -5,8 +5,6 @@ namespace Reducer
 {
   public class Timer : MonoBehaviour
   {
-    public static Timer instance;
-
     [SerializeField] public float time = 30f;
     [SerializeField] private GameObject sand_Time;
     [SerializeField] private TextMeshProUGUI timerText;
@@ -15,10 +13,7 @@ namespace Reducer
     public bool _timerOn = false;
     public Pause pause;
     public GameObject panelwin;
-    private void Awake()
-    {
-      instance = this;
-    }
+
     private void Start()
     {
       sand_Time.transform.position = new Vector3(-5.7f, 12f, 9);
@@ -45,7 +40,7 @@ namespace Reducer
             panelwin.SetActive(true);
             pause.Enable(true);
           }
-          else if (GameObject.Find("Achivekills") == true && Killsbot.instance.wantkill == Killsbot.instance.nowkill)
+          else if (GameObject.Find("Achivekills") == true && Singleton<Killsbot>.Instance.wantkill == Singleton<Killsbot>.Instance.nowkill)
           {
             _timeLeft = time;
             _timerOn = false;

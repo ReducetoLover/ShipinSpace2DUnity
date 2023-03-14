@@ -400,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc281f3b82db1c8448b54779348a3368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: 8
+  _sceneName: 9
 --- !u!1 &259699991515243777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 3044345201873464394}
   m_Layer: 5
   m_Name: Dynamic Joystick
-  m_TagString: Untagged
+  m_TagString: Joystick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1251,7 +1251,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1741,7 +1741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8921450608465952464, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: _sceneName
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8921450608465952465, guid: 36bab2bf049c87a49ac508e40b64b2d2, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1810,7 +1810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1686108243212218152, guid: a0a318f80448baa488e9e87c0e8983a6, type: 3}
       propertyPath: _sceneName
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1686108245131843912, guid: a0a318f80448baa488e9e87c0e8983a6, type: 3}
       propertyPath: m_Pivot.x

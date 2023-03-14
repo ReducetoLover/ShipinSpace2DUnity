@@ -7,16 +7,15 @@ namespace Reducer
   public class AchiveControl : MonoBehaviour
   {
     public int SaveLevel = 0;
-    public static AchiveControl instance;
-    [SerializeField] public float time = 30f;
-    public GameObject Timeimage;
-    public TextMeshProUGUI timerText;
-    public GameObject Killimage;
-    public TextMeshProUGUI Textkills;
-    public GameObject panelwin;
+    [SerializeField] private float time = 30f;
+    [SerializeField] private GameObject Timeimage;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private GameObject Killimage;
+    [SerializeField] private TextMeshProUGUI Textkills;
+    [SerializeField] private GameObject panelwin;
     public Pause pause;
     public float _timeLeft;
-    private bool toggle = false;
+    private bool toggle;
     private bool _timerOn = false;
     private bool workkill = false;
     [SerializeField] public int wantkill = 5;
@@ -27,8 +26,10 @@ namespace Reducer
     {
       _timeLeft = 0f;
       toggle = true;
-      instance = this;
-      print("Start");
+      SearchAchiveTime();
+    }
+    public void SearchAchiveTime()
+    {
       if (GameObject.Find("AchiveKill"))
       {
         workkill = true;
@@ -51,14 +52,13 @@ namespace Reducer
       }
     }
 
-
     public void Update()
     {
       if (Time.timeScale == 1)
       {
         if (toggle)
         {
-          if (_timerOn! || workkill)
+          if (_timerOn !|| workkill)
           {
             if (achiveTime == true && achiveKills == true)
             {
@@ -73,11 +73,14 @@ namespace Reducer
             {
               _Time();
             }
+            else
+            {
+              Infinity();
+            }
           }
           else
           {
-            LevelSave.instance.SaveInPlayerPrefs();
-            // print($"{PlayerPrefs.GetInt("levels")} ага+{FromScript.instance.NameScript()}");
+            Singleton<SaveToPlayerPrefs>.Instance.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
             toggle = false;
             panelwin.SetActive(true);
             pause.Enable(true);
@@ -99,7 +102,7 @@ namespace Reducer
         {
           _timeLeft = time;
           _timerOn = false;
-          print($"{time} +{FromScript.instance.NameScript()}");
+          print($"{time} +{Singleton<FromScript>.Instance.NameScript()}");
         }
 
 
@@ -117,7 +120,10 @@ namespace Reducer
 
       }
     }
+    public void Infinity()
+    {
 
+    }
     public void CountKills() //подсчёт килов
     {
       if (nowkill < wantkill)
@@ -129,7 +135,6 @@ namespace Reducer
     public void Kill()//обновление счётчика килов
     {
       Textkills.text = ($"{nowkill}/{wantkill}");
-      Console.WriteLine(76876);
     }
 
     public void UpdateTimeText()//обновление таймера

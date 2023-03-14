@@ -21,7 +21,8 @@ namespace Reducer
       Level5 = 5,
       Scene3d,
       MapGame,
-      Loader  
+      Infinity,
+      Loader 
     }
   }
 }
