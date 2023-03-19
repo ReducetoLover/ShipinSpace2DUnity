@@ -299,6 +299,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1637734681641522692, guid: 49942b83636341a4eb65fb93e8d17234, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1637734681641522693, guid: 49942b83636341a4eb65fb93e8d17234, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -350,6 +354,10 @@ PrefabInstance:
     - target: {fileID: 7483999057947251506, guid: 49942b83636341a4eb65fb93e8d17234, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483999057947251506, guid: 49942b83636341a4eb65fb93e8d17234, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49942b83636341a4eb65fb93e8d17234, type: 3}
@@ -468,12 +476,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059569595, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059569595, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1588322467}
     - target: {fileID: 1059569595, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Load
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059569595, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Reducer.Loader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059569595, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1588322465, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
       propertyPath: m_Layer
@@ -661,6 +681,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
+--- !u!1 &5218127696823817405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1059569593, guid: 2abc27da75d473f4586874a30d14fce2, type: 3}
+  m_PrefabInstance: {fileID: 5218127696823817404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5218127696823817406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218127696823817405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f41a0be1f7342d4ebb99c1243069eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Infinity
+  _text: {fileID: 0}
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0a7752c7cedeeb34baa4e061312ecc1a, type: 2}
+        m_TargetAssemblyTypeName: Reducer.GameEvent, Assembly-CSharp
+        m_MethodName: Init
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!58 &5218127696823817407
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218127696823817405}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &5854013036464240577
 PrefabInstance:
   m_ObjectHideFlags: 0

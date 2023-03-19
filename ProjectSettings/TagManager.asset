@@ -17,6 +17,9 @@ TagManager:
   - Manager
   - Joystick
   - ZoneUp
+  - ZoneDown
+  - botinfinity
+  - bulletbotinfinity
   layers:
   - Default
   - TransparentFX

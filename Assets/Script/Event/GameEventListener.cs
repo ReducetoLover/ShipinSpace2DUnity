@@ -5,7 +5,7 @@ namespace Reducer
 {
   public class GameEventListener : MonoBehaviour
   {
-    [SerializeField]
+    [SerializeField, AttentionField]
     private GameEvent _gameEvent;
     [SerializeField]
     private UnityEvent Action;
