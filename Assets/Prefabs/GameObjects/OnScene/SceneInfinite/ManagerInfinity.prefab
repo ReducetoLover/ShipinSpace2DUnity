@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3469675021652382518
 Transform:
   m_ObjectHideFlags: 0
@@ -147,6 +147,10 @@ GameObject:
   - component: {fileID: 1687644688518525228}
   - component: {fileID: 7942513414036457440}
   - component: {fileID: 6190828584736896275}
+  - component: {fileID: 2143012689}
+  - component: {fileID: 2143012691}
+  - component: {fileID: 2143012692}
+  - component: {fileID: 2143012701}
   m_Layer: 0
   m_Name: ManagerInfinity
   m_TagString: Untagged
@@ -164,7 +168,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3469675021652382518}
   m_Father: {fileID: 0}
@@ -325,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996278f24998b1e48a4b2b85fc572cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 0}
+  hit: {fileID: 5341883427233524362}
   detonation: {fileID: 0}
   vfx: {fileID: 0}
 --- !u!114 &8122735373415218414
@@ -353,7 +357,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -365,7 +369,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1687644688518525228
 MonoBehaviour:
@@ -381,7 +385,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Reducer.UIScore, Assembly-CSharp
+        m_MethodName: ShowValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7942513414036457440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,3 +426,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fire: {fileID: 0}
   Player: {fileID: 0}
+--- !u!114 &2143012689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527337802201659423}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0ff1d051057be4aa02a9e59277922e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Upborder: {fileID: 0}
+  bot: {fileID: 4806259641709365380, guid: 68319ab0a6e427544ac4a6b3850b689d, type: 3}
+  Secondsmin: 1
+  Secondsmax: 2
+  minXP: 0
+  maxXP: 0
+  Minfirebot: 0
+  Maxfirebot: 0
+--- !u!114 &2143012691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527337802201659423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: afa9ff4421bd7cc46a9f1855d435c382, type: 2}
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2143012692}
+        m_TargetAssemblyTypeName: Reducer.EnemyWaves, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2143012692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527337802201659423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe0a80f591ac5d498bc9124b47ffc5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Upborder: {fileID: 0}
+--- !u!114 &2143012701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527337802201659423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 7a3fb254fd2a2bd4b80fd8f9a0d760ed, type: 2}
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2143012692}
+        m_TargetAssemblyTypeName: Reducer.EnemyWaves, Assembly-CSharp
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 namespace Reducer
 {
@@ -7,10 +8,8 @@ namespace Reducer
   public class PlayerMove : MonoBehaviour
   {
     [SerializeField] private DynamicJoystick _joystick;
-    private int Diescore;
     [SerializeField] private Rigidbody2D _rigidbody2D;
-    [SerializeField] private GameObject paneldie;
-    [SerializeField] private TextMeshProUGUI paneldietext;
+    [SerializeField] private UnityEvent PlayerDie;
     public Pause pause;
     private float _speed = 4f;
     private Vector2 _direction = Vector2.zero;
@@ -18,12 +17,10 @@ namespace Reducer
     private void Awake()
     {
       _joystick = FindObjectOfType<DynamicJoystick>();
-      pause = (Pause)FindObjectOfType(typeof(Pause));
+      //pause = (Pause)FindObjectOfType(typeof(Pause));
     }
     private void Start()
     {
-
-      Diescore = PlayerPrefs.GetInt("Diescore");
       _rigidbody2D = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
@@ -39,11 +36,7 @@ namespace Reducer
     {
       if (collision.tag == "bot" || collision.tag == "bulletbot")
       {
-        paneldie.SetActive(true);
-        Diescore += 1;
-        PlayerPrefs.SetInt("Diescore",Diescore);
-        paneldietext.text = ($"YOU DIE x{PlayerPrefs.GetInt("Diescore")}");
-        pause.Enable(true);
+        PlayerDie.Invoke();
       }
     }
   }

@@ -158,6 +158,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5992265354094268385, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_PrefabInstance: {fileID: 6545936251099683784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &970912935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2128947383933688735, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+  m_PrefabInstance: {fileID: 2128947383344362644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &993829904 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5814831371864017623, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
@@ -364,18 +369,6 @@ PrefabInstance:
       propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 6434928714778558153}
-    - target: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
-      propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
-      propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
-      propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 885146963, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: MusicObj
       value: 
@@ -471,7 +464,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_PrefabInstance: {fileID: 2128947383344362644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 970912935}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5cf9f9190fc6046929deddcc2a0dfa, type: 3}
@@ -482,12 +475,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 885146963, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_PrefabInstance: {fileID: 2128947383344362644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 970912935}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 881377832df114f42871b4648ecd6483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2128947383344362648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970912935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a491dfbb89cd8df4e88474bebb52ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paneldietext: {fileID: 1889393518}
+  Diescore: 0
 --- !u!1001 &2931545651993186070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -802,10 +809,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
-      propertyPath: pause
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: paneldie
       value: 
       objectReference: {fileID: 7462870288397872948}
@@ -817,6 +820,46 @@ PrefabInstance:
       propertyPath: paneldietext
       value: 
       objectReference: {fileID: 1889393518}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7462870288397872948}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2128947383344362645}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2128947383344362648}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Playerisdeadonlevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Reducer.DieInLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799081, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Mass
       value: 1

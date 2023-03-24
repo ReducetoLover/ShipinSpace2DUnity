@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f408c93497ebd444ab0ed548e92a37e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Upborder: {fileID: 0}
   bot: {fileID: 4806259641709365380, guid: 68319ab0a6e427544ac4a6b3850b689d, type: 3}
   Secondsmin: 2
   Secondsmax: 6

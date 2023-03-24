@@ -7,7 +7,7 @@ namespace Reducer
   {
     [SerializeField]
     private UnityEvent OnPaused;
-    void FixedUpdate()
+    void Update()
     {
       GamePause();
     }
