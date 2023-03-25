@@ -386,6 +386,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 898001005}
+    - target: {fileID: 4164230700930153196, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: paneldietext
+      value: 
+      objectReference: {fileID: 784657805}
     - target: {fileID: 9060000539664779788, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: Fire
       value: 
@@ -417,6 +421,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5cf9f9190fc6046929deddcc2a0dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &80038555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4164230700930153196, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+  m_PrefabInstance: {fileID: 80038551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a491dfbb89cd8df4e88474bebb52ad78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &113337361 stripped
@@ -958,6 +973,54 @@ PrefabInstance:
       propertyPath: paneldietext
       value: 
       objectReference: {fileID: 784657805}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1745285247}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 80038554}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 80038555}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Enable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Playerisdeadonlevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Reducer.DieInLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305348381865799080, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
+      propertyPath: PlayerDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4305348381865799082, guid: 95e11e0e3d2e53a438f91669898dd2c9, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -158,11 +158,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5992265354094268385, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
   m_PrefabInstance: {fileID: 6545936251099683784}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &970912935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2128947383933688735, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
-  m_PrefabInstance: {fileID: 2128947383344362644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &993829904 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5814831371864017623, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
@@ -449,6 +444,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 555773553}
+    - target: {fileID: 4164230700930153196, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: paneldietext
+      value: 
+      objectReference: {fileID: 1889393518}
     - target: {fileID: 8125235544314404356, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -464,7 +463,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_PrefabInstance: {fileID: 2128947383344362644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970912935}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5cf9f9190fc6046929deddcc2a0dfa, type: 3}
@@ -475,26 +474,23 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 885146963, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
   m_PrefabInstance: {fileID: 2128947383344362644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970912935}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 881377832df114f42871b4648ecd6483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2128947383344362648
+--- !u!114 &2128947383344362648 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4164230700930153196, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+  m_PrefabInstance: {fileID: 2128947383344362644}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970912935}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a491dfbb89cd8df4e88474bebb52ad78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paneldietext: {fileID: 1889393518}
-  Diescore: 0
 --- !u!1001 &2931545651993186070
 PrefabInstance:
   m_ObjectHideFlags: 0
