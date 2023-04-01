@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Reducer
 {
-    public class ButtonCloseMenu : Graphic
+  public class ButtonCloseMenu : Graphic
   {
-       protected override void OnPopulateMesh(VertexHelper vh)
+    protected override void OnPopulateMesh(VertexHelper vh)
     {
-        vh.Clear();
+      vh.Clear();
     }
-    }
+  }
 }

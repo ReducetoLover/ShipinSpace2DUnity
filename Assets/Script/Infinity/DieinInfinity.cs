@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -7,9 +8,11 @@ namespace Reducer
   {
     [SerializeField] private TextMeshProUGUI textDie;
     [SerializeField] private TextMeshProUGUI textUI;
+    [SerializeField] private TextMeshProUGUI textRecord;
     public void Die()
     {
-      textDie.text = ($"{textUI.text} score") ;
+      textDie.text = $"{textUI.text} score";
+      textRecord.text = $"Record {SaveToPlayerPrefs.RecordInfinity(textUI.text)} score";
     }
   }
 }

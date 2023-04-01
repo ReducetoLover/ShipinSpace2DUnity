@@ -1160,6 +1160,14 @@ PrefabInstance:
       propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885146962, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
+      propertyPath: OnPaused.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 885146963, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: MusicObj
       value: 

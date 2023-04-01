@@ -22,13 +22,13 @@ namespace Reducer
         Automate.fontStyle = FontStyles.SmallCaps | FontStyles.Underline | FontStyles.Italic;
         Button.fontStyle &= FontStyles.SmallCaps;
       }
+      else
+      {
+        Automate.fontStyle = FontStyles.SmallCaps | FontStyles.Underline | FontStyles.Italic;
+        Button.fontStyle &= FontStyles.SmallCaps;
+      }
       print($"{Choice}+{Singleton<FromScript>.Instance.NameScript()} При старте");
     }
-    void Update()
-    {
-
-    }
-
     public void PutButton()
     {
       Choice = "button";

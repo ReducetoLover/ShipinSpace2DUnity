@@ -6,7 +6,6 @@ namespace Reducer
 {
   public class AchiveControl : MonoBehaviour
   {
-    public int SaveLevel = 0;
     [SerializeField] private float time = 30f;
     [SerializeField] private GameObject Timeimage;
     [SerializeField] private TextMeshProUGUI timerText;
@@ -80,7 +79,7 @@ namespace Reducer
           }
           else
           {
-            Singleton<SaveToPlayerPrefs>.Instance.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
+            SaveToPlayerPrefs.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
             toggle = false;
             panelwin.SetActive(true);
             pause.Enable(true);

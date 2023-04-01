@@ -27,7 +27,7 @@ namespace Reducer
         hpBar.sprite.size = new Vector2(hpBar.width, 0.56f);
         if (health <= 0)
         {
-          Singleton<SaveToPlayerPrefs>.Instance.Scorekillbot();
+          SaveToPlayerPrefs.Scorekillbot();
           if (GameObject.Find("AchiveKill") == true)
           {
             print($"bot+{Singleton<FromScript>.Instance.NameScript()}");

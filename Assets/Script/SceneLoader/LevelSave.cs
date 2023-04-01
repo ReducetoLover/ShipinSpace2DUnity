@@ -12,7 +12,7 @@ namespace Reducer
     public GameObject Level5lock;
     public GameObject Level6lock;
     //[SerializeField] private Dictionary<GameObject,int> LevelsLock = new Dictionary<GameObject,int>();
-    [SerializeField] private int Unlocklevel= 2;
+    [SerializeField] private int Unlocklevel= 1;
 
     private void Start()
     {
@@ -54,11 +54,6 @@ namespace Reducer
           Level6lock.SetActive(false);
           break;
         default:
-          Level2lock.SetActive(false);
-          Level3lock.SetActive(false);
-          Level4lock.SetActive(false);
-          Level5lock.SetActive(false);
-          Level6lock.SetActive(false);
           break;
       }
     }

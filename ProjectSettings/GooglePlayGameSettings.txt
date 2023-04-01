@@ -1,2 +1,9 @@
 lastUpgrade=01101
 proj.pluginVersion=0.11.01
+proj.AppId=482587959187
+and.BundleId=com.D7Yinc.ShipINSPACE
+proj.classDir=Assets
+proj.ConstantsClassName=GPsing
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--Google+Play+game+services+IDs.+Save+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--app_id--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e482587959187%3c%2fstring%3e%0d%0a++%3c%21--package_name--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.D7Yinc.ShipINSPACE%3c%2fstring%3e%0d%0a++%3c%21--leaderboard+RecordInfinity--%3e%0d%0a++%3cstring+name%3d%22leaderboard_recordinfinity%22+translatable%3d%22false%22%3eCgkIk7_v44UOEAIQAQ%3c%2fstring%3e%0d%0a%3c%2fresources%3e
+and.ClientId=482587959187-aq30h0dn3jojlmnli6l4m536mb7gk9s8.apps.googleusercontent.com
+android.SetupDone=true
