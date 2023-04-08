@@ -4,15 +4,9 @@ namespace Reducer
 {
   public class AnimateDetanationandmusic : MonoBehaviour
   {
-    public AudioSource hit;
-    public AudioSource detonation;
-    [SerializeField]
-    private ParticleSystem vfx;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    [SerializeField] private AudioSource hit;
+    [SerializeField] private AudioSource detonation;
+    [SerializeField] private ParticleSystem vfx;
     public void Hit()
     {
        hit.Play();
@@ -24,11 +18,6 @@ namespace Reducer
       Instantiate(vfx);
       vfx.Play();
       detonation.Play();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
     }
   }
 }

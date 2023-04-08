@@ -6,7 +6,7 @@ namespace Reducer
   {
     public SpriteRenderer sprite;
     public float width;
-    void Start()
+    private void Start()
     {
       width = 7.3f;
     }

@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -6,31 +5,47 @@ namespace Reducer
 {
   public class AchiveControl : MonoBehaviour
   {
-    [SerializeField] private float time = 30f;
+    private float time = 0;
+    private int wantkill = 5;
+    [SerializeField] private GameObject AchiveTime;
+    [SerializeField] private GameObject AchiveKill;
     [SerializeField] private GameObject Timeimage;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private GameObject Killimage;
     [SerializeField] private TextMeshProUGUI Textkills;
     [SerializeField] private GameObject panelwin;
+    private LevelsSettings levelsSettings;
     public Pause pause;
-    public float _timeLeft;
-    private bool toggle;
-    private bool _timerOn = false;
+    private float timeLeft;
+    private bool LevelComplete = false;
+    private bool timerOn = false;
     private bool workkill = false;
-    [SerializeField] public int wantkill = 5;
     public int nowkill = 0;
     public bool achiveKills = true;
     public bool achiveTime = true;
-    private void Start()
+
+    private void Awake()
     {
-      _timeLeft = 0f;
-      toggle = true;
-      SearchAchiveTime();
-    }
-    public void SearchAchiveTime()
-    {
-      if (GameObject.Find("AchiveKill"))
+      levelsSettings = Resources.Load<LevelsSettings>($"Levels/{PlayerPrefs.GetString("CurrentLevel")}");
+      if (levelsSettings.Time != 0)
       {
+        time = levelsSettings.Time;
+        timerOn = true;
+        achiveTime = true;
+      }
+      else
+      {
+        timerOn = false;
+        achiveTime = false;
+        AchiveTime.SetActive(false);
+      }
+      if (levelsSettings.Kill != 0)
+      {
+        if (!timerOn)
+        {
+          AchiveKill.transform.GetComponent<RectTransform>().localPosition = AchiveTime.transform.GetComponent<RectTransform>().localPosition;
+        }
+        wantkill = levelsSettings.Kill;
         workkill = true;
         achiveKills = true;
       }
@@ -38,28 +53,23 @@ namespace Reducer
       {
         workkill = false;
         achiveKills = false;
-      }
-      if (GameObject.Find("AchiveTime"))
-      {
-        _timerOn = true;
-        achiveTime = true;
-      }
-      else
-      {
-        _timerOn = false;
-        achiveTime = false;
+        AchiveKill.SetActive(false);
       }
     }
 
-    public void Update()
+    private void Start()
+    {
+      timeLeft = 0f;
+    }
+    private void Update()
     {
       if (Time.timeScale == 1)
       {
-        if (toggle)
+        if (!LevelComplete)
         {
-          if (_timerOn !|| workkill)
+          if (timerOn! || workkill)
           {
-            if (achiveTime == true && achiveKills == true)
+            if (achiveTime && achiveKills)
             {
               _Time();
               _Kill();
@@ -72,42 +82,39 @@ namespace Reducer
             {
               _Time();
             }
-            else
-            {
-              Infinity();
-            }
           }
           else
           {
+            LevelComplete = true;
             SaveToPlayerPrefs.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
-            toggle = false;
             panelwin.SetActive(true);
+            print("пауза прошли уровень");
             pause.Enable(true);
           }
         }
       }
 
     }
-    public void _Time() //включение/выключение запуска времени  
+    private void _Time() //включение/выключение запуска времени  
     {
-      if (_timerOn)
+      if (timerOn)
       {
-        if (_timeLeft < time)
+        if (timeLeft < time)
         {
-          _timeLeft += Time.deltaTime;
+          timeLeft += Time.deltaTime;
           UpdateTimeText();
         }
         else
         {
-          _timeLeft = time;
-          _timerOn = false;
+          timeLeft = time;
+          timerOn = false;
           print($"{time} +{Singleton<FromScript>.Instance.NameScript()}");
         }
 
 
       }
     }
-    public void _Kill() //включение/выключение посчёта килов
+    private void _Kill() //включение/выключение посчёта килов
     {
       if (workkill)
       {
@@ -119,10 +126,6 @@ namespace Reducer
 
       }
     }
-    public void Infinity()
-    {
-
-    }
     public void CountKills() //подсчёт килов
     {
       if (nowkill < wantkill)
@@ -131,19 +134,19 @@ namespace Reducer
       }
 
     }
-    public void Kill()//обновление счётчика килов
+    private void Kill()//обновление счётчика килов
     {
       Textkills.text = ($"{nowkill}/{wantkill}");
     }
 
-    public void UpdateTimeText()//обновление таймера
+    private void UpdateTimeText()//обновление таймера
     {
-      if (_timeLeft < 0)
+      if (timeLeft < 0)
       {
-        _timeLeft = 0;
+        timeLeft = 0;
       }
-      float minutes = Mathf.FloorToInt(_timeLeft / 60);
-      float seconds = Mathf.FloorToInt(_timeLeft % 180);
+      float minutes = Mathf.FloorToInt(timeLeft / 60);
+      float seconds = Mathf.FloorToInt(timeLeft % 180);
       timerText.text = ($"{seconds}/{time}");
     }
   }

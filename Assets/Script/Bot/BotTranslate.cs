@@ -23,19 +23,19 @@ namespace Reducer
       else
         Translate2();
     }
-    public void Translate2()
+    private void Translate2()
     {
       transform.Translate(Vector2.left * 1 * Time.deltaTime, Space.World);
     }
-    public void Translate()
+    private void Translate()
     {
       transform.Translate(Vector2.down * 2 * Time.deltaTime, Space.World);
     }
-    public void MoveTowards()
+    private void MoveTowards()
     {
       transform.position = Vector2.MoveTowards(transform.position, new Vector2(player.transform.position.x, transform.position.y), 0.005f);
     }
-    public bool RayBot(ref bool workRay)
+    private bool RayBot(ref bool workRay)
     {
       int bitmask = ~((1 << 7) | (1 << 6));
       float distation = Vector2.Distance(bot.transform.position, border.transform.position);

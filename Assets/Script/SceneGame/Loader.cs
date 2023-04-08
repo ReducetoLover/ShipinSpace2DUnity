@@ -7,8 +7,10 @@ namespace Reducer
   {
     [SerializeField]
     public SceneName _sceneName;
+    private MapPoint mapPoint;
     public void Load()
     {
+      //mapPoint.SetParameters((int)_sceneName);
       SceneManager.LoadSceneAsync(_sceneName.ToString());
     }
     public enum SceneName
@@ -18,11 +20,12 @@ namespace Reducer
       Level2 = 2,
       Level3 = 3,
       Level4 = 4,
-      Level5 = 5,
+      Level5 = 5, 
       Scene3d,
       MapGame,
       Infinity,
-      Loader 
+      Loader,
+      Levels
     }
   }
 }

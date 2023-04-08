@@ -21,6 +21,8 @@ TagManager:
   - botinfinity
   - bulletbotinfinity
   - Sky
+  - Planet
+  - LockPlanet
   layers:
   - Default
   - TransparentFX

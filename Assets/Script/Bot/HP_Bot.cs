@@ -4,18 +4,21 @@ namespace Reducer
 {
   public class HP_Bot : MonoBehaviour
   {
+    private LevelsSettings levelSettings;
     private Vector3 placeafterdestroy;
     private int animated = 0;
     [SerializeField] private BulletPlayer bulletSpeed;
     [SerializeField] private HPBar hpBar;
-    private int health = 0;
+    [SerializeField] private int health = 0;
     private void Awake()
     {
+      int index = new LevelNameData().GetLevelIndex();
+      levelSettings = Resources.Load<LevelsSettings>($"Levels/{PlayerPrefs.GetString("CurrentLevel")}");
       HPbotPurpose();
     }
-    public int HPbotPurpose()
+    private int HPbotPurpose()
     {
-      return health = Random.Range(Singleton<RespawnBot>.Instance.minXP, Singleton<RespawnBot>.Instance.maxXP);
+      return health = Random.Range(levelSettings.MinXP, levelSettings.MaxXP + 1);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,10 +33,7 @@ namespace Reducer
           SaveToPlayerPrefs.Scorekillbot();
           if (GameObject.Find("AchiveKill") == true)
           {
-            print($"bot+{Singleton<FromScript>.Instance.NameScript()}");
             Singleton<AchiveControl>.Instance.CountKills();
-            print("Засчитало кил");
-
           }
           if (animated == 0)
           {

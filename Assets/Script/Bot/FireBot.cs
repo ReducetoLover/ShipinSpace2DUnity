@@ -5,15 +5,14 @@ namespace Reducer
 {
   public class FireBot : MonoBehaviour
   {
-    public AudioSource botFiresound;
-    [SerializeField]
-    private GameObject bullet;
-    [SerializeField]
-    private GameObject bot;
-    [SerializeField]
-    private Transform gun;
-    void Start()
+    private LevelsSettings levelsSettings;
+    [SerializeField] private AudioSource botFiresound;
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject bot;
+    [SerializeField] private Transform gun;
+    private void Start()
     {
+      levelsSettings = Resources.Load<LevelsSettings>($"Levels/{PlayerPrefs.GetString("SceneName")}");
       StartCoroutine(BotFire());
     }
     public void BotFireOn()
@@ -22,7 +21,8 @@ namespace Reducer
     }
     IEnumerator BotFire()
     {
-      yield return new WaitForSeconds(Random.Range(Singleton<RespawnBot>.Instance.Minfirebot, Singleton<RespawnBot>.Instance.Maxfirebot));
+      yield return new WaitForSeconds(Random.Range(levelsSettings.MinFirebot, levelsSettings.MaxFirebot + 1));
+      //yield return new WaitForSeconds(Random.Range(Singleton<RespawnBot>.Instance.Minfirebot, Singleton<RespawnBot>.Instance.Maxfirebot));
       FireBullet();
       botFiresound.Play();
       StartCoroutine(BotFire());

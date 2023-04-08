@@ -6,7 +6,7 @@ namespace Reducer
 {
   public class EnemyWaves : MonoBehaviour
   {
-    private LevelData level;
+    private InfinitySettings level;
     private int indexWave;
     private int indexEnemy;
     [SerializeField] private GameObject Upborder;
@@ -14,7 +14,7 @@ namespace Reducer
     private void Awake()
     {
       int index = new LevelNameData().GetLevelIndex();
-      level = Resources.Load<LevelData>($"Levels/Infinity");
+      level = Resources.Load<InfinitySettings>($"Levels/Infinity");
     }
     public void Generate()
     {

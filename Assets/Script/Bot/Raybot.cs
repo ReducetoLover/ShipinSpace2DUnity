@@ -16,6 +16,5 @@ namespace Reducer
       transform.position = Vector2.MoveTowards(transform.position, new Vector2(targetplayer.transform.position.x, transform.position.y), speed);
 
     }
-
   }
 }

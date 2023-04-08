@@ -8,7 +8,7 @@ namespace Reducer
     private const string KeyLevelIndex = "LevelIndex";
     public void Setname(string name)
     {
-      Debug.Log($"{name} - запомнил название уровня") ;
+      Debug.Log($"{name} - запомнил название уровня");
       PlayerPrefs.SetString(Key, name);
       PlayerPrefs.Save();
     }
@@ -22,7 +22,7 @@ namespace Reducer
     }
     public void SetLevelIndex(int value)
     {
-      Debug.Log(value);
+      Debug.Log($"index {value}");
       PlayerPrefs.SetInt(KeyLevelIndex, value);
       PlayerPrefs.Save();
     }
@@ -31,7 +31,6 @@ namespace Reducer
       if (PlayerPrefs.HasKey(KeyLevelIndex))
       {
         return PlayerPrefs.GetInt(KeyLevelIndex);
-
       }
       return 0;
     }

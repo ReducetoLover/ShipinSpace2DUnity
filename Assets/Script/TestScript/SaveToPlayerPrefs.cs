@@ -9,9 +9,11 @@ namespace Reducer
   {
     public static void SaveLevel()
     {
-      if (SceneManager.GetActiveScene().buildIndex + 1 > PlayerPrefs.GetInt("levels"))
+      print(PlayerPrefs.GetInt("indexlvl"));
+      print(PlayerPrefs.GetInt("levels"));
+      if (PlayerPrefs.GetInt("indexlvl") > PlayerPrefs.GetInt("levels"))
       {
-        PlayerPrefs.SetInt("levels", SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("levels", PlayerPrefs.GetInt("indexlvl"));
       }
     }
     public static void Scorekillbot()

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9284bc08b9c2b8b44be91766be1c6cc7, type: 3}
   m_Name: Infinity
   m_EditorClassIdentifier: 
+  player: {fileID: 21300000, guid: 41eaf8a365034524d8eac8bd5fc51c14, type: 3}
   Waves:
   - EnemyPrefab: {fileID: 648151262001971323, guid: 39f3705a13e694846b2a136c322ab9aa, type: 3}
     CountinWave: 10

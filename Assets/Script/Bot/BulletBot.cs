@@ -4,12 +4,9 @@ namespace Reducer
 {
   public class BulletBot : MonoBehaviour
   {
-    [SerializeField, AttentionField]
-    private GameObject bullet;
-    public int damage = 1;
-    [SerializeField]
-    public float speed = 5f;
-    void Update()
+    [SerializeField, AttentionField] private GameObject bullet;
+    [SerializeField] private float speed = 5f;
+    private void Update()
     {
       transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
@@ -21,7 +18,6 @@ namespace Reducer
       }
       if (collision.tag == "ZoneBorder")
       {
-        print("пролетела");
         Destroy(bullet.gameObject);
       }
 

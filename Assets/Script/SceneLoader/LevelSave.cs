@@ -1,60 +1,32 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace Reducer
 {
   public class LevelSave : MonoBehaviour
   {
-    public GameObject Level2lock;
-    public GameObject Level3lock;
-    public GameObject Level4lock;
-    public GameObject Level5lock;
-    public GameObject Level6lock;
-    //[SerializeField] private Dictionary<GameObject,int> LevelsLock = new Dictionary<GameObject,int>();
-    [SerializeField] private int Unlocklevel= 1;
+    [SerializeField] private GameObject[] LockLevels;
+    [SerializeField] private int Unlocklevel=0;
 
     private void Start()
     {
-      
+      LockLevels = GameObject.FindGameObjectsWithTag("Planet");
       UnlockLevelsInMap();
-    }
 
+    }
     public void UnlockLevelsInMap()
     {
       Unlocklevel = PlayerPrefs.GetInt("levels");
-      print($"{Unlocklevel} уровень открыт");
-      switch (Unlocklevel)
+      for (int i = 0;  LockLevels.Length > i & i < Unlocklevel; i++)
       {
-        case 1:
-          break;
-        case 2:
-          Level2lock.SetActive(false);
-          break;
-        case 3:
-          Level2lock.SetActive(false);
-          Level3lock.SetActive(false);
-          break;
-        case 4:
-          Level2lock.SetActive(false);
-          Level3lock.SetActive(false);
-          Level4lock.SetActive(false);
-          break;
-        case 5:
-          Level2lock.SetActive(false);
-          Level3lock.SetActive(false);
-          Level4lock.SetActive(false);
-          Level5lock.SetActive(false);
-          break;
-        case 6:
-          Level2lock.SetActive(false);
-          Level3lock.SetActive(false);
-          Level4lock.SetActive(false);
-          Level5lock.SetActive(false);
-          Level6lock.SetActive(false);
-          break;
-        default:
-          break;
+        LockLevels[i].SetActive(false);
       }
     }
   }

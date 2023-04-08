@@ -32,7 +32,7 @@ namespace Reducer
       {
         Destroy(bullet.gameObject);
       }
-      if (collision.tag == "ZoneBorder")
+      if (collision.tag == "ZoneUp")
       {
         Destroy(bullet.gameObject,0.2f);
       }
