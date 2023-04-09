@@ -1,28 +1,19 @@
 using UnityEngine;
 using UnityEngine.Audio;
-using System;
-using Unity;
 using UnityEngine.UI;
 
 namespace Reducer
 {
   public class Sound : MonoBehaviour
   {
-    public GameObject MusicObj;
-    public AudioMixerGroup mixer;
+    [SerializeField] private GameObject MusicObj;
+    [SerializeField] private AudioMixerGroup mixer;
     private int Music;
-    // Start is called before the first frame update
-    private void Awake()
-    {
-
-    }
-    void Start()
+    private void Start()
     {
       Music = PlayerPrefs.GetInt("SaveMusic");
-      print($"Music +{Singleton<FromScript>.Instance.NameScript()}");
       if (Music == 0)
       {
-        print($"работает+{Singleton<FromScript>.Instance.NameScript()}");
         MusicObj.GetComponent<Image>().color = new Vector4(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1f);
         mixer.audioMixer.SetFloat("MusicVolume", 0);
       }
@@ -32,13 +23,6 @@ namespace Reducer
         mixer.audioMixer.SetFloat("MusicVolume", -80);
       }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
-
     public void PlayMusic()
     {
       if (Music == 1)
@@ -47,7 +31,7 @@ namespace Reducer
         mixer.audioMixer.SetFloat("MusicVolume", 0);
         Music = 0;
       }
-      else if (Music==0)
+      else if (Music == 0)
       {
         MusicObj.GetComponent<Image>().color = new Vector4(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 0.5f);
         mixer.audioMixer.SetFloat("MusicVolume", -80);
@@ -55,8 +39,6 @@ namespace Reducer
       }
       PlayerPrefs.SetInt("SaveMusic", Music);
       PlayerPrefs.Save();
-      print($"Music+{Singleton<FromScript>.Instance.NameScript()}");
-
     }
   }
 }

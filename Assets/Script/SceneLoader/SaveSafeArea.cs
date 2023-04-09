@@ -4,13 +4,12 @@ namespace Reducer
 {
   public class SaveSafeArea : MonoBehaviour
   {
-    [SerializeReference]
-    private Camera _camera;
+    [SerializeReference] private Camera cam;
     private void Start()
     {
       SafeAreaData saveSafeArea = new SafeAreaData();
-      saveSafeArea.SetMax(_camera.ScreenToWorldPoint(Screen.safeArea.max));
-      saveSafeArea.SetMin(_camera.ScreenToWorldPoint(Screen.safeArea.min));
+      saveSafeArea.SetMax(cam.ScreenToWorldPoint(Screen.safeArea.max));
+      saveSafeArea.SetMin(cam.ScreenToWorldPoint(Screen.safeArea.min));
     }
   }
 }

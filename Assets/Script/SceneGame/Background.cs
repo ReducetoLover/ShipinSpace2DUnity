@@ -4,22 +4,21 @@ namespace Reducer
 {
   public class Background : MonoBehaviour
   {
-    [SerializeField] private SpriteRenderer _sprite;
-    [SerializeField] private float _speed = 2.5f;
-    private float _positionMinY;
-    private Vector2 _restartPosition;
+    [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private float speed = 2.5f;
+    private float positionMinY;
+    private Vector2 restartPosition;
     private void Awake()
     {
-
-      _restartPosition = transform.position;
-      _positionMinY = _sprite.bounds.size.y*2 - _restartPosition.y;// одна высоты спрайта - начальная позиция по Y
+      restartPosition = transform.position;
+      positionMinY = sprite.bounds.size.y*2 - restartPosition.y;// одна высоты спрайта - начальная позиция по Y
     }
     private void Update()
     {
-      transform.Translate(Vector3.down * _speed * Time.deltaTime);
-      if (transform.position.y <= -_positionMinY)
+      transform.Translate(Vector3.down * speed * Time.deltaTime);
+      if (transform.position.y <= -positionMinY)
       {
-        transform.position = _restartPosition;
+        transform.position = restartPosition;
       }
     }
   }

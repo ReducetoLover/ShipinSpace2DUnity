@@ -7,12 +7,10 @@ namespace Reducer
 
   public class SceneLoader : MonoBehaviour
   {
-    [SerializeField]
-    private string _sceneNameSaved;
+    [SerializeField] private string _sceneNameSaved;
     private readonly LevelNameData _levelName = new LevelNameData();
     private void Start()
     {
-      //_sceneNameSaved = PlayerPrefs.GetString("CurrentLevel");
       if (!string.IsNullOrEmpty(_sceneNameSaved))
       {
         StartCoroutine(AddScene(_sceneNameSaved));

@@ -5,24 +5,10 @@ namespace Reducer
 
   public class BulletPlayer : MonoBehaviour
   {
-    [SerializeField]
-    public GameObject bullet;
+    [SerializeField] private GameObject bullet;
     public int damage = 1;
-    [SerializeField]
-    public float speed = 5f;
-    SafeAreaData saveSafeArea = new SafeAreaData();
-    public Vector2 min;
-    Vector2 max;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-      //min = Camera.main.ViewportToWorldPoint(Screen.safeArea.max);
-      //max = Camera.main.ViewportToWorldPoint(Screen.safeArea.min);
-    }
-
-    // Update is called once per frame
-    public void Update()
+    [SerializeField] private float speed = 5f;
+    private void Update()
     {
       transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
@@ -34,7 +20,7 @@ namespace Reducer
       }
       if (collision.tag == "ZoneUp")
       {
-        Destroy(bullet.gameObject,0.2f);
+        Destroy(bullet.gameObject, 0.2f);
       }
     }
   }

@@ -10,7 +10,6 @@ public class CameraSize : MonoBehaviour
   private const float HalfSize = 200.0f;
   private void Awake()
   {
-    print($"2+{Singleton<FromScript>.Instance.NameScript()}");
     CameraResize();
   }
   private void CameraResize()
@@ -19,12 +18,10 @@ public class CameraSize : MonoBehaviour
     float targetRatio = TargetSizeX / TargetSizeY;
     if (screenRatio >= targetRatio)
     {
-      print($"2+{Singleton<FromScript>.Instance.NameScript()}");
       Resize();
     }
     else
     {
-
       float differentSize = targetRatio / screenRatio;
       Resize(differentSize);
     }

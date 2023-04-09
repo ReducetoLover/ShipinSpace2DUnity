@@ -5,8 +5,7 @@ namespace Reducer
 {
   public class BackgroundImages : MonoBehaviour
   {
-    [SerializeField]
-    private List<Sprite> _sprites;
+    [SerializeField] private List<Sprite> _sprites;
     private float _offsetY = -25f;
     private void Start()
     {
@@ -17,7 +16,7 @@ namespace Reducer
     }
     private void SetImagesPosition()
     {
-      transform.position = new Vector2(transform.position.x, new SafeAreaData().GetMax().y-5f);
+      transform.position = new Vector2(transform.position.x, new SafeAreaData().GetMax().y - 5f);
       for (int i = 0; i < _sprites.Count; i++)
       {
         GameObject image = new GameObject("image", typeof(SpriteRenderer));

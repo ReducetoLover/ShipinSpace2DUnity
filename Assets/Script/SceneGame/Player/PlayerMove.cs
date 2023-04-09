@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.Events;
 
 namespace Reducer
@@ -7,29 +6,28 @@ namespace Reducer
   [RequireComponent(typeof(Rigidbody2D))]
   public class PlayerMove : MonoBehaviour
   {
-    [SerializeField] private DynamicJoystick _joystick;
-    [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private DynamicJoystick joystick;
+    [SerializeField] private Rigidbody2D rigidbody2d;
     [SerializeField] private UnityEvent PlayerDie;
-    public Pause pause;
-    private float _speed = 4f;
-    private Vector2 _direction = Vector2.zero;
+    [SerializeField] private Pause pause;
+    private float speed = 4f;
+    private Vector2 direction = Vector2.zero;
 
     private void Awake()
     {
-      _joystick = FindObjectOfType<DynamicJoystick>();
-      //pause = (Pause)FindObjectOfType(typeof(Pause));
+      joystick = FindObjectOfType<DynamicJoystick>();
     }
     private void Start()
     {
-      _rigidbody2D = GetComponent<Rigidbody2D>();
+      rigidbody2d = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
     {
-      if (_joystick.Horizontal != 0 || _joystick.Vertical != 0)
+      if (joystick.Horizontal != 0 || joystick.Vertical != 0)
       {
-        _direction.x = _joystick.Horizontal;
-        _direction.y = _joystick.Vertical;
-        _rigidbody2D.MovePosition(_rigidbody2D.position + _speed * Time.fixedDeltaTime * _direction);
+        direction.x = joystick.Horizontal;
+        direction.y = joystick.Vertical;
+        rigidbody2d.MovePosition(rigidbody2d.position + speed * Time.fixedDeltaTime * direction);
       }
     }
     private void OnTriggerEnter2D(Collider2D collision)

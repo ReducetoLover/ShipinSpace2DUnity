@@ -34,7 +34,6 @@ namespace Reducer
         workRay = true;
       }
     }
-
   }
 }
 

@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: cb619f67d3bb63b45aeb747319d30101, type: 2}
+  gameEvent: {fileID: 11400000, guid: afa9ff4421bd7cc46a9f1855d435c382, type: 2}
   Action:
     m_PersistentCalls:
       m_Calls:

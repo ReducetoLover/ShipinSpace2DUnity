@@ -5,17 +5,15 @@ namespace Reducer
 {
   public class GameEventListener : MonoBehaviour
   {
-    [SerializeField, AttentionField]
-    private GameEvent _gameEvent;
-    [SerializeField]
-    private UnityEvent Action;
+    [SerializeField, AttentionField] private GameEvent gameEvent;
+    [SerializeField] private UnityEvent Action;
     private void OnEnable()
     {
-      _gameEvent.RegisterListerner(this);
+      gameEvent.RegisterListerner(this);
     }
     private void OnDisable()
     {
-      _gameEvent.UnregisterListerner(this);
+      gameEvent.UnregisterListerner(this);
     }
     public void InitEvent()
     {

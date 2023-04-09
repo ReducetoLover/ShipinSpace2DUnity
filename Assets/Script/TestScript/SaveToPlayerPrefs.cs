@@ -1,11 +1,9 @@
 using System;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Reducer
 {
-  public  class SaveToPlayerPrefs: MonoBehaviour
+  public class SaveToPlayerPrefs : MonoBehaviour
   {
     public static void SaveLevel()
     {
@@ -29,6 +27,5 @@ namespace Reducer
       }
       return Convert.ToString(PlayerPrefs.GetInt("scorerecord"));
     }
-    
   }
 }

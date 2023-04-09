@@ -56,7 +56,6 @@ namespace Reducer
         AchiveKill.SetActive(false);
       }
     }
-
     private void Start()
     {
       timeLeft = 0f;
@@ -93,7 +92,6 @@ namespace Reducer
           }
         }
       }
-
     }
     private void _Time() //включение/выключение запуска времени  
     {
@@ -110,8 +108,6 @@ namespace Reducer
           timerOn = false;
           print($"{time} +{Singleton<FromScript>.Instance.NameScript()}");
         }
-
-
       }
     }
     private void _Kill() //включение/выключение посчёта килов
@@ -123,7 +119,6 @@ namespace Reducer
         {
           workkill = false;
         }
-
       }
     }
     public void CountKills() //подсчёт килов
@@ -132,13 +127,11 @@ namespace Reducer
       {
         nowkill++;
       }
-
     }
     private void Kill()//обновление счётчика килов
     {
       Textkills.text = ($"{nowkill}/{wantkill}");
     }
-
     private void UpdateTimeText()//обновление таймера
     {
       if (timeLeft < 0)

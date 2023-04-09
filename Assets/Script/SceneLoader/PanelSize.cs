@@ -5,8 +5,7 @@ namespace Reducer
   [RequireComponent(typeof(RectTransform))]
   public class PanelSize : MonoBehaviour
   {
-    [SerializeField]
-    private Location _location;
+    [SerializeField] private Location location;
     private void Awake()
     {
       CalculateSafeArea();
@@ -25,7 +24,7 @@ namespace Reducer
     private void SetAnchors(Vector2 anchorMin, Vector2 anchorMax)
     {
       var rectTransform = GetComponent<RectTransform>();
-      switch (_location)
+      switch (location)
       {
         case Location.Top:
           rectTransform.anchorMin = new Vector2(anchorMin.x, anchorMax.y);

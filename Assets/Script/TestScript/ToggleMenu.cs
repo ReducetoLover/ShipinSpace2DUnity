@@ -5,9 +5,9 @@ namespace Reducer
 {
   public class ToggleMenu : MonoBehaviour
   {
-    public TextMeshProUGUI Automate;
-    public TextMeshProUGUI Button;
-    public string Choice;
+    [SerializeField] private TextMeshProUGUI Automate;
+    [SerializeField] private TextMeshProUGUI Button;
+    [SerializeField] private string Choice;
 
     void Awake()
     {

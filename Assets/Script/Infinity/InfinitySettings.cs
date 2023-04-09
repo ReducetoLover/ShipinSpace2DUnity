@@ -13,14 +13,9 @@ namespace Reducer
   public class Wave
   {
     public GameObject EnemyPrefab;
-    [Range(1,100)]
+    [Range(1, 100)]
     public int CountinWave;
     [Range(1, 360)]
     public int WaitAfterWave;
   }
-  //[System.Serializable]
-  //public class SettingLevel
-  //{
-  //  public GameObject game;
-  //}
 }

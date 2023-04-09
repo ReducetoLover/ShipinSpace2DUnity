@@ -147,10 +147,9 @@ GameObject:
   - component: {fileID: 1687644688518525228}
   - component: {fileID: 7942513414036457440}
   - component: {fileID: 6190828584736896275}
-  - component: {fileID: 2143012689}
   - component: {fileID: 2143012691}
-  - component: {fileID: 2143012692}
   - component: {fileID: 2143012701}
+  - component: {fileID: 2143012692}
   m_Layer: 0
   m_Name: ManagerInfinity
   m_TagString: Untagged
@@ -426,26 +425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fire: {fileID: 0}
   Player: {fileID: 0}
---- !u!114 &2143012689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8527337802201659423}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f0ff1d051057be4aa02a9e59277922e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Upborder: {fileID: 0}
-  bot: {fileID: 4806259641709365380, guid: 68319ab0a6e427544ac4a6b3850b689d, type: 3}
-  Secondsmin: 1
-  Secondsmax: 2
-  minXP: 0
-  maxXP: 0
-  Minfirebot: 0
-  Maxfirebot: 0
 --- !u!114 &2143012691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,13 +437,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: afa9ff4421bd7cc46a9f1855d435c382, type: 2}
+  gameEvent: {fileID: 0}
   Action:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2143012692}
         m_TargetAssemblyTypeName: Reducer.EnemyWaves, Assembly-CSharp
         m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2143012701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527337802201659423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 0}
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2143012692}
+        m_TargetAssemblyTypeName: Reducer.EnemyWaves, Assembly-CSharp
+        m_MethodName: Generate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -487,31 +494,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Upborder: {fileID: 0}
---- !u!114 &2143012701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8527337802201659423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64bd210dae586bf4eba7aa819d44dede, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: 7a3fb254fd2a2bd4b80fd8f9a0d760ed, type: 2}
-  Action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2143012692}
-        m_TargetAssemblyTypeName: Reducer.EnemyWaves, Assembly-CSharp
-        m_MethodName: Generate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

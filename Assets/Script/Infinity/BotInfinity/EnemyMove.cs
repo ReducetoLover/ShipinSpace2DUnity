@@ -20,11 +20,8 @@ namespace Reducer
     {
       if (collision.tag == "ZoneDown")
       {
-        print("Косунлся");
-            Destroy(gameObject,1f);
-
+        Destroy(gameObject,1f);
       }
-
     }
   }
 }

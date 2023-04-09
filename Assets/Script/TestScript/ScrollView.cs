@@ -4,7 +4,7 @@ namespace Reducer
 {
   public class ScrollView : MonoBehaviour
   {
-    public GameObject canvas;
+    [SerializeField] private GameObject canvas;
     private void Start()
     {
       SizeScroll();

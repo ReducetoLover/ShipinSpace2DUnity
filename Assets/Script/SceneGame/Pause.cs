@@ -5,17 +5,15 @@ namespace Reducer
 {
   public class Pause : MonoBehaviour
   {
-    [SerializeField]
-    private UnityEvent OnPaused;
-    void Update()
+    [SerializeField] private UnityEvent OnPaused;
+    private void Update()
     {
       GamePause();
     }
     public void Enable(bool value)
     {
-      
       Time.timeScale = value ? 0 : 1;
-      if (Time.timeScale == 1 )
+      if (Time.timeScale == 1)
       {
         print($"отключение паузы+{Singleton<FromScript>.Instance.NameScript()}");
       }
@@ -44,7 +42,6 @@ namespace Reducer
           OnPaused.Invoke();
           Enable(true);
         }
-
       }
     }
   }

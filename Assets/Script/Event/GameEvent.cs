@@ -6,7 +6,7 @@ namespace Reducer
   [CreateAssetMenu(fileName = "GameEvent", menuName = "GameSo/Game Event")]
   public class GameEvent : ScriptableObject
   {
-    private  List<GameEventListener> _listeners = new List<GameEventListener>();
+    private List<GameEventListener> _listeners = new List<GameEventListener>();
     public void RegisterListerner(GameEventListener listener)
     {
       _listeners.Add(listener);
@@ -23,7 +23,5 @@ namespace Reducer
         Debug.Log("очки");
       }
     }
-
   }
-
 }

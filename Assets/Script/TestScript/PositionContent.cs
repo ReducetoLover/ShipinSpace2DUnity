@@ -4,7 +4,7 @@ namespace Reducer
 {
   public class PositionContent : MonoBehaviour
   {
-    public GameObject canvas;
+    [SerializeField] private GameObject canvas;
 
     private void Start()
     {

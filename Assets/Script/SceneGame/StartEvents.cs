@@ -4,14 +4,12 @@ namespace Reducer
 {
   public class StartEvents : MonoBehaviour
   {
-    [SerializeField]
-    private GameEvent _startScene;
-    [SerializeField]
-    private GameEvent _gameplay;
+    [SerializeField] private GameEvent startScene;
+    [SerializeField] private GameEvent gameplay;
     private void Start()
     {
-      _startScene.Init();
-      _gameplay.Init();
+      startScene.Init();
+      gameplay.Init();
     }
   }
 }

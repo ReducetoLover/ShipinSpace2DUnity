@@ -5,7 +5,6 @@ namespace Reducer
 {
   public class FirePlayer : MonoBehaviour
   {
-    public static FirePlayer instance;
     [SerializeField]
     private GameObject bullet;
     [SerializeField]
@@ -13,10 +12,6 @@ namespace Reducer
     [SerializeField]
     private Transform gun;
     public AudioSource Fire;
-    private void Start()
-    {
-      instance = this;
-    }
     public void Shot()
     {
       Fire.Play();

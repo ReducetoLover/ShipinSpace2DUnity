@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Reducer
 {
@@ -28,18 +26,11 @@ namespace Reducer
     public int Time;
     [Range(0, 100)]
     public int Kill;
-    //public List<Level> Waves = new List<Level>();
   }
-  // public List<SettingLevel> SettingLevels = new List<SettingLevel>();
 }
 
 [System.Serializable]
 public class Level
 {
-  
+
 }
-//[System.Serializable]
-//public class SettingLevel
-//{
-//  public GameObject game;
-//}

@@ -12,7 +12,6 @@ namespace Reducer
     public GoogleServices googleServices;
     public void Die()
     {
-      
       textDie.text = $"{textUI.text} score";
       textRecord.text = $"Record {SaveToPlayerPrefs.RecordInfinity(textUI.text)} score";
       googleServices.SaveTableRecord(PlayerPrefs.GetInt("scorerecord"));

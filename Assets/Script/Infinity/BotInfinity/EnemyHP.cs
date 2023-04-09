@@ -12,15 +12,11 @@ namespace Reducer
     [SerializeField] private HPBar hpBar;
     [SerializeField] private int health = 0;
     [SerializeField] private UnityEvent HPbot;
-    private void Awake()
-    {
-      //HPbotPurpose();
-    }
     private void Start()
     {
       HPbotPurpose();
     }
-    public int HPbotPurpose()
+    private int HPbotPurpose()
     {
        return health = Random.Range(1, 10);
     }
@@ -28,7 +24,6 @@ namespace Reducer
     {
       if (collision.tag == "bullet")
       {
-        
         Singleton<AnimateDetanationandmusic>.Instance.Hit();
         hpBar.width -= hpBar.width / health;
         health -= bulletSpeed.damage;
