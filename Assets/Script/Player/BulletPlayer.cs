@@ -23,5 +23,16 @@ namespace Reducer
         Destroy(bullet.gameObject, 0.2f);
       }
     }
+    private void OnTriggerEnter(Collider collision)
+    {
+      if (collision.tag == "bot")
+      {
+        Destroy(bullet.gameObject);
+      }
+      if (collision.tag == "ZoneUp")
+      {
+        Destroy(bullet.gameObject, 0.2f);
+      }
+    }
   }
 }

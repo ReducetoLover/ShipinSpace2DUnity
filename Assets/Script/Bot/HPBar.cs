@@ -8,7 +8,7 @@ namespace Reducer
     public float width;
     private void Start()
     {
-      width = 7.3f;
+      width = sprite.size.x;
     }
   }
 }

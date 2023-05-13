@@ -17,9 +17,10 @@ namespace Reducer
     {
       int bitmask = ~((1 << 7) | (1 << 6));
       float distation = Vector2.Distance(player.position, border.position);
-      Debug.DrawRay(player.position, player.TransformDirection(Vector2.down) * distation, Color.green);
       hit = Physics2D.Raycast(player.position, player.TransformDirection(Vector2.down), distation, bitmask);
+      Debug.DrawRay(player.position, player.TransformDirection(Vector2.down) * distation, Color.green);
     }
+
     public void CheckCollider(ref bool workRay)
     {
       if (hit.collider.CompareTag("bot") && workRay == true)

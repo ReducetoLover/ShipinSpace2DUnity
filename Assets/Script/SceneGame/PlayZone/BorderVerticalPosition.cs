@@ -6,7 +6,7 @@ namespace Reducer
   {
     [SerializeField] private Camera cam;
     [SerializeField] private bool isUp;
-    private void Start()
+    private void Awake()
     {
       SetPosition();
     }

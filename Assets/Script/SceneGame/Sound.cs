@@ -15,7 +15,7 @@ namespace Reducer
       if (Music == 0)
       {
         MusicObj.GetComponent<Image>().color = new Vector4(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1f);
-        mixer.audioMixer.SetFloat("MusicVolume", 0);
+        mixer.audioMixer.SetFloat("MusicVolume", -20);
       }
       else if (Music == 1)
       {
@@ -28,7 +28,7 @@ namespace Reducer
       if (Music == 1)
       {
         MusicObj.GetComponent<Image>().color = new Vector4(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 1f);
-        mixer.audioMixer.SetFloat("MusicVolume", 0);
+        mixer.audioMixer.SetFloat("MusicVolume", -20);
         Music = 0;
       }
       else if (Music == 0)

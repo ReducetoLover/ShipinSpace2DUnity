@@ -6,7 +6,7 @@ namespace Reducer
   public class Pause : MonoBehaviour
   {
     [SerializeField] private UnityEvent OnPaused;
-    private void Update()
+    private void FixedUpdate()
     {
       GamePause();
     }

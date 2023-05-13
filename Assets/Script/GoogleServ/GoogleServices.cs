@@ -8,6 +8,8 @@ namespace Reducer
   {
     private const string InfinityRecord = "CgkIk7_v44UOEAIQAQ";
 
+    private const string CompanyRecord = "CgkIk7_v44UOEAIQAg";
+
     private void Start()
     {
       PlayGamesPlatform.Activate();
@@ -31,6 +33,10 @@ namespace Reducer
     public void SaveTableRecord(int record)
     {
       Social.ReportScore(record, InfinityRecord, (bool success) => { });
+    }
+    public void SaveTableRecordCompany(int record)
+    {
+      Social.ReportScore(record, CompanyRecord, (bool success) => { });
     }
     public void SignInGoogle()
     {

@@ -11,11 +11,11 @@ namespace Reducer
     {
        hit.Play();
     }
-    public void PlayAnimateDetonationBot(Vector3 a)
+    public void PlayAnimateDetonationBot(Vector3 placeafterdestroy)
     {
       print($"взрыв+{Singleton<FromScript>.Instance.NameScript()}");
-      vfx.transform.position = a;
-      Instantiate(vfx);
+      vfx.transform.position = placeafterdestroy;
+      vfx.Simulate(0.0f, true, true);
       vfx.Play();
       detonation.Play();
     }

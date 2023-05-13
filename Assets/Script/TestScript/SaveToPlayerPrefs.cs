@@ -27,5 +27,6 @@ namespace Reducer
       }
       return Convert.ToString(PlayerPrefs.GetInt("scorerecord"));
     }
+    
   }
 }

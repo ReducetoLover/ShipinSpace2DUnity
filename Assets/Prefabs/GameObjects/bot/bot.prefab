@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 2360113934983823239}
   - component: {fileID: 2464406789306013398}
   - component: {fileID: 3062968971276535596}
-  - component: {fileID: 2999209229083498173}
   - component: {fileID: -7214012624567242811}
   - component: {fileID: 2557250325637119374}
   m_Layer: 0
@@ -158,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: {fileID: -695880446576564936, guid: 57246b19736f9474a95071a99c5e107d, type: 3}
   hpBar: {fileID: 4026426431331866428}
+  health: 0
 --- !u!114 &2464406789306013398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,19 +190,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &2999209229083498173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806259641709365380}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c4f0162039b70a4a8f3bd0f93be62c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroybot: {fileID: 0}
 --- !u!82 &-7214012624567242811
 AudioSource:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ namespace Reducer
     [SerializeField] private Transform gun;
     private void Start()
     {
-      levelsSettings = Resources.Load<LevelsSettings>($"Levels/{PlayerPrefs.GetString("SceneName")}");
+      levelsSettings = Resources.Load<LevelsSettings>($"Levels/{PlayerPrefs.GetString("CurrentLevel")}");
       StartCoroutine(BotFire());
     }
     public void BotFireOn()

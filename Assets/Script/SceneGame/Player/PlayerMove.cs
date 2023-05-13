@@ -10,17 +10,8 @@ namespace Reducer
     [SerializeField] private Rigidbody2D rigidbody2d;
     [SerializeField] private UnityEvent PlayerDie;
     [SerializeField] private Pause pause;
-    private float speed = 4f;
+    private float speed = 6f;
     private Vector2 direction = Vector2.zero;
-
-    private void Awake()
-    {
-      joystick = FindObjectOfType<DynamicJoystick>();
-    }
-    private void Start()
-    {
-      rigidbody2d = GetComponent<Rigidbody2D>();
-    }
     private void FixedUpdate()
     {
       if (joystick.Horizontal != 0 || joystick.Vertical != 0)
@@ -37,5 +28,6 @@ namespace Reducer
         PlayerDie.Invoke();
       }
     }
+
   }
 }

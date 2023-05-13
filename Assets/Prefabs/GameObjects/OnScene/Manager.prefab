@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ca5c16c0fedf641a4a738cc5a47100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startScene: {fileID: 11400000, guid: 7a3fb254fd2a2bd4b80fd8f9a0d760ed, type: 2}
-  _gameplay: {fileID: 11400000, guid: afa9ff4421bd7cc46a9f1855d435c382, type: 2}
+  startScene: {fileID: 0}
+  gameplay: {fileID: 0}
 --- !u!114 &2128947383933688730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81aab5f96814b9946bdba9202cafbb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!81 &5939191618906970934
 AudioListener:
   m_ObjectHideFlags: 0
@@ -327,16 +327,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ac6204ffa2c6e49a8dc9b5a60b9192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaveLevel: 0
-  time: 30
+  AchiveTime: {fileID: 0}
+  AchiveKill: {fileID: 0}
   Timeimage: {fileID: 0}
   timerText: {fileID: 0}
   Killimage: {fileID: 0}
   Textkills: {fileID: 0}
   panelwin: {fileID: 0}
   pause: {fileID: 0}
-  _timeLeft: 0
-  wantkill: 7
   nowkill: 0
   achiveKills: 1
   achiveTime: 1
@@ -353,8 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 885146959}
-  detonation: {fileID: 0}
-  vfx: {fileID: 0}
+  detonation: {fileID: 3922306128683662424, guid: 1f1dad3020783484a938f60bfb367b88, type: 3}
+  vfx: {fileID: 3922306128683662422, guid: 1f1dad3020783484a938f60bfb367b88, type: 3}
 --- !u!114 &885146961
 MonoBehaviour:
   m_ObjectHideFlags: 0
