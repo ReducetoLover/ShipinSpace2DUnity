@@ -17,7 +17,6 @@ namespace Reducer
     [SerializeField] private TextMeshProUGUI Textkills;
     [SerializeField] private GameObject panelwin;
     private ThreeDSettings threeDSettings;
-    public GoogleServices googleServices;
     public Pause pause;
     private float timeLeft;
     private bool LevelComplete = false;
@@ -90,7 +89,7 @@ namespace Reducer
             LevelComplete = true;
             SaveToPlayerPrefs.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
             panelwin.SetActive(true);
-            googleServices.SaveTableRecordCompany(PlayerPrefs.GetInt("levels"));
+            
             print("пауза прошли уровень");
             pause.Enable(true);
           }

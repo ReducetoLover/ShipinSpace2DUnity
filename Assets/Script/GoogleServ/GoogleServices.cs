@@ -38,10 +38,12 @@ namespace Reducer
     }
     public void SaveTableRecordCompany(int record)
     {
+      print("table");
       Social.ReportScore(record, CompanyRecord, (bool success) => { });
     }
     public void SaveTableRecord3D(int record)
     {
+      print("table3d");
       Social.ReportScore(record, ThreeDRecord, (bool success) => { });
     }
     public void SignInGoogle()

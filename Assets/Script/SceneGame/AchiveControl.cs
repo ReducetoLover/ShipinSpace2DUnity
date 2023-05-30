@@ -15,6 +15,7 @@ namespace Reducer
     [SerializeField] private TextMeshProUGUI Textkills;
     [SerializeField] private GameObject panelwin;
     private LevelsSettings levelsSettings;
+    public GoogleServices googleServices;
     public Pause pause;
     private float timeLeft;
     private bool LevelComplete = false;
@@ -84,6 +85,7 @@ namespace Reducer
           }
           else
           {
+            googleServices.SaveTableRecordCompany(PlayerPrefs.GetInt("levels"));
             LevelComplete = true;
             SaveToPlayerPrefs.SaveLevel(); //LevelSave.instance.SaveInPlayerPrefs();
             panelwin.SetActive(true);
