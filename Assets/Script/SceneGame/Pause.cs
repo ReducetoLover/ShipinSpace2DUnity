@@ -36,7 +36,7 @@ namespace Reducer
     {
       if (pause)
       {
-        if (!GameObject.Find("PanelDie"))
+        if (!GameObject.FindGameObjectWithTag("PanelAction"))
         {
           print("пауза из-за панели смерти");
           OnPaused.Invoke();

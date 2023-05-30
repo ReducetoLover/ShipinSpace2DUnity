@@ -5,7 +5,7 @@ namespace Reducer
 {
   public class AdsCore : MonoBehaviour, IUnityAdsInitializationListener
   {
-    [SerializeField] private bool testMode = false;
+    [SerializeField] private bool testMode = true;
     [SerializeField] private string _adnroidGameId;
     [SerializeField] private string _iOSGameId;
     private string _gameId;

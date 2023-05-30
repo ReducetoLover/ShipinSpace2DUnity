@@ -332,6 +332,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602471, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602471, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602471, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602471, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602471, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259699991307602472, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d20fe739e52024d8acf8e32bf24b1c, type: 3}
     - target: {fileID: 259699991307602474, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -400,10 +424,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 259699991515243777, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_TagString
+      value: PanelAction
+      objectReference: {fileID: 0}
     - target: {fileID: 259699991669814139, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 259699991669814141, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c398922a20f2f984db55718ac2c394f5, type: 3}
     - target: {fileID: 259699991669814143, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -532,10 +564,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4415399735500392700, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415399735500392700, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415399735500392700, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415399735500392700, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 4415399735500392701, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: sceneName
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4415399735500392702, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d20fe739e52024d8acf8e32bf24b1c, type: 3}
     - target: {fileID: 4415399735534531836, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -543,6 +595,10 @@ PrefabInstance:
     - target: {fileID: 4415399735534531836, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415399735534531836, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_TagString
+      value: PanelAction
       objectReference: {fileID: 0}
     - target: {fileID: 4415399735534531838, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Enabled
@@ -576,6 +632,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6545936250692801525, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_TagString
+      value: PanelAction
+      objectReference: {fileID: 0}
     - target: {fileID: 6545936251162263940, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_Name
       value: UIGame
@@ -598,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6545936251162263960, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6545936251162263960, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -684,6 +744,10 @@ PrefabInstance:
       propertyPath: _sceneName
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6545936252062983575, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d20fe739e52024d8acf8e32bf24b1c, type: 3}
     - target: {fileID: 6545936252062983593, guid: cda957f1a31145b47a74a2aca3b133d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -1118,7 +1182,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7a3fb254fd2a2bd4b80fd8f9a0d760ed, type: 2}
     - target: {fileID: 2128947383933688729, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2128947383933688729, guid: 6d7dad351dfaf7942a9d0e36f8802028, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1325,7 +1389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7719452499971574965, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7719452499971574965, guid: 1b86d9433de632048a66033ef1eccea9, type: 3}
       propertyPath: m_LocalPosition.x

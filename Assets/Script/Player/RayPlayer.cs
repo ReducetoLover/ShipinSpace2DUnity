@@ -21,7 +21,7 @@ namespace Reducer
       Debug.DrawRay(player.position, player.TransformDirection(Vector2.down) * distation, Color.green);
     }
 
-    public void CheckCollider(ref bool workRay)
+    private void CheckCollider(ref bool workRay)
     {
       if (hit.collider.CompareTag("bot") && workRay == true)
       {
@@ -30,7 +30,6 @@ namespace Reducer
       }
       else if (!hit.collider.CompareTag("bot") && workRay == false)
       {
-        print("стопколлайдер");
         Singleton<FirePlayer>.Instance.StopAllCoroutines();
         workRay = true;
       }

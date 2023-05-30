@@ -8,7 +8,6 @@ namespace Reducer
   {
     public Color colorSky;
     public Sprite player;
-   //public Sprite bot;
     [Range(1, 100)]
     [Header("Settings bot")]
     public int MinXP;

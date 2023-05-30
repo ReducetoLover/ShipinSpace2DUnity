@@ -1028,6 +1028,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 75944519137694610, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d20fe739e52024d8acf8e32bf24b1c, type: 3}
     - target: {fileID: 273108354337569612, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1316,6 +1320,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1736137925681207593, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_TagString
+      value: PanelAction
+      objectReference: {fileID: 0}
     - target: {fileID: 1744103370990457242, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: _sceneName
       value: 0
@@ -1428,6 +1436,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3301866183975124469, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_TagString
+      value: PanelAction
+      objectReference: {fileID: 0}
     - target: {fileID: 3661007570720644150, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1501,8 +1513,20 @@ PrefabInstance:
       value: Enable
       objectReference: {fileID: 0}
     - target: {fileID: 5871387506960496839, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5871387506960496839, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5871387506960496839, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5871387506960496839, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -89.625
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 6036471043711085492, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: m_Sprite
@@ -1564,6 +1588,10 @@ PrefabInstance:
       propertyPath: _sceneName
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7998652943135200083, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c398922a20f2f984db55718ac2c394f5, type: 3}
     - target: {fileID: 8117578985176949414, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
       propertyPath: _sceneName
       value: 0
@@ -1584,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9007066967351951161, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d20fe739e52024d8acf8e32bf24b1c, type: 3}
     m_RemovedComponents:
     - {fileID: 1175085307291780844, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}
     - {fileID: 4009248609671716940, guid: 7877e664f0984584cbe9669cba2a923d, type: 3}

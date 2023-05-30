@@ -27,6 +27,15 @@ namespace Reducer
       }
       return Convert.ToString(PlayerPrefs.GetInt("scorerecord"));
     }
-    
+    public static string Record3D(string value)
+    {
+      if (PlayerPrefs.GetInt("secondsrecord") < Convert.ToInt32(value))
+      {
+        PlayerPrefs.SetInt("secondsrecord", Convert.ToInt32(value));
+        return value;
+      }
+      return Convert.ToString(PlayerPrefs.GetInt("secondsrecord"));
+    }
+
   }
 }

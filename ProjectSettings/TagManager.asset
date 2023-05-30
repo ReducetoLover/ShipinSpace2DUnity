@@ -23,6 +23,7 @@ TagManager:
   - Sky
   - Planet
   - LockPlanet
+  - PanelAction
   layers:
   - Default
   - TransparentFX

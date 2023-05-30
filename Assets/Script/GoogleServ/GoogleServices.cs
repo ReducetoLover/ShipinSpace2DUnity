@@ -10,6 +10,8 @@ namespace Reducer
 
     private const string CompanyRecord = "CgkIk7_v44UOEAIQAg";
 
+    private const string ThreeDRecord = "CgkIk7_v44UOEAIQAw";
+
     private void Start()
     {
       PlayGamesPlatform.Activate();
@@ -37,6 +39,10 @@ namespace Reducer
     public void SaveTableRecordCompany(int record)
     {
       Social.ReportScore(record, CompanyRecord, (bool success) => { });
+    }
+    public void SaveTableRecord3D(int record)
+    {
+      Social.ReportScore(record, ThreeDRecord, (bool success) => { });
     }
     public void SignInGoogle()
     {

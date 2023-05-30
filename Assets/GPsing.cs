@@ -25,6 +25,8 @@
 public static class GPsing
 {
         public const string leaderboard_recordinfinity = "CgkIk7_v44UOEAIQAQ"; // <GPGSID>
+        public const string leaderboard_record_company = "CgkIk7_v44UOEAIQAg"; // <GPGSID>
+        public const string leaderboard_record_3d = "CgkIk7_v44UOEAIQAw"; // <GPGSID>
 
 }
 
