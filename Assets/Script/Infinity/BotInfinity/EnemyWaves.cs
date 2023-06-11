@@ -41,7 +41,7 @@ namespace Reducer
         count--;
         enemies[indexEnemy].gameObject.SetActive(true);
         indexEnemy++;
-        yield return new WaitForSeconds(Random.Range(1, 7 - indexWave));
+        yield return new WaitForSeconds(Random.Range(1f, 7f - (float)indexWave));
       }
       if (indexWave < level.Waves.Count - 1)
       {

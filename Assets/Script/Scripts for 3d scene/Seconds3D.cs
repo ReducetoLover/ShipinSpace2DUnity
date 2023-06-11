@@ -17,7 +17,7 @@ namespace Reducer
     {
       yield return new WaitForSeconds(1f);
       seconds++;
-      textUI.text = seconds.ToString();
+      textUI.text = seconds.ToString()+"s";
       StartCoroutine(Sec3D());
     }
 

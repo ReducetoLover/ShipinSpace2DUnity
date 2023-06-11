@@ -33,7 +33,7 @@ namespace Reducer
     {
       Choice = "button";
       print($"{Choice}+{Singleton<FromScript>.Instance.NameScript()} При нажатии");
-      PlayerPrefs.SetString("ToggleMenu", Choice);
+      PlayerPrefs.SetString("ChoiceControl", Choice);
       PlayerPrefs.Save();
       Button.fontStyle = FontStyles.SmallCaps | FontStyles.Underline | FontStyles.Italic;
       Automate.fontStyle &= FontStyles.SmallCaps;

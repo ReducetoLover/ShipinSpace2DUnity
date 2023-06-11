@@ -12,7 +12,7 @@ namespace Reducer
     public void Die()
     {
       textDie.text = $"{textUI.text} seconds";
-      textRecord.text = $"Record {SaveToPlayerPrefs.Record3D(textUI.text)} seconds";
+      textRecord.text = $"Record {SaveToPlayerPrefs.Record3D(textUI.text[..^1])} seconds";
       googleServices.SaveTableRecord3D(PlayerPrefs.GetInt("secondsrecord"));
 
     }
