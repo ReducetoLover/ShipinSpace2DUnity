@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 132162627}
   - component: {fileID: 132162626}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 175030518}
   - component: {fileID: 175030517}
   m_Layer: 0
-  m_Name: GameObject (5)
+  m_Name: DownWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +946,7 @@ GameObject:
   - component: {fileID: 852713527}
   - component: {fileID: 852713526}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: FrontWall
   m_TagString: ZoneUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 1059562334}
   - component: {fileID: 1059562333}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: UpWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 1224955256}
   - component: {fileID: 1224955255}
   m_Layer: 0
-  m_Name: GameObject (6)
+  m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1725,7 +1725,7 @@ GameObject:
   - component: {fileID: 1883596734}
   - component: {fileID: 1883596733}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BehindWall
   m_TagString: ZoneDown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
